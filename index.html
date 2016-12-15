@@ -32,7 +32,7 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active js"><a href="#html" onclick="History.pushState(null, null, '.'); event.preventDefault(); return false;">samuelthomas2774.github.io</a></li>
+						<li class="active js"><a href="#html" onclick="window.location.href = '.'; event.preventDefault(); return false;">samuelthomas2774.github.io</a></li>
 						<li class="active no-js"><a href=".">samuelthomas2774.github.io</a></li>
 						<li><a href="https://samuelthomas.ml">samuelthomas.ml</a></li>
 						<li><a href="https://samuelthomas.ml/about/contact">Contact</a></li>
@@ -52,6 +52,7 @@
 								<li><a href="javascript:$.fadein.reset();">Reset scrolling animation</a></li>
 								<li><a href="javascript:$('html,body').scrollTop(0);">Scroll to the top</a></li>
 								<li><a href="javascript:$('html,body').scrollTop(0);$.fadein.reset();">Scroll to the top and reset scrolling animation</a></li>
+								<li><a href="javascript:history.pushState(null, null, window.location.pathname + window.location.search);">Delete url hash</a></li>
 							</ul>
 						</li>
 					</ul>
