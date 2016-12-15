@@ -34,6 +34,10 @@ body {
 	-webkit-backdrop-filter: blur(20px) brightness(130%);
 }
 
+h2 {
+	word-wrap: break-word;
+}
+
 .footer {
 	margin-top: 30px;
 	margin-bottom: 100px;
