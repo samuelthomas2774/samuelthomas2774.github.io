@@ -26,8 +26,10 @@ body {
 	vertical-align: middle;
 }
 
-.btn-primary .octicon {
+.btn-primary .octicon,
+.label .octicon {
 	fill: #ffffff;
+	vertical-align: -3px;
 }
 
 .blur-background {
