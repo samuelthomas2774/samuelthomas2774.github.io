@@ -18,6 +18,10 @@ body {
 	position: relative;
 }
 
+.jumbotron {
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.075);
+}
+
 .gray-background {
 	background: #eeeeee;
 }
@@ -28,7 +32,7 @@ body {
 
 .btn-primary .octicon,
 .label .octicon {
-	fill: #ffffff;
+	fill: currentcolor;
 	vertical-align: -3px;
 }
 
@@ -37,7 +41,7 @@ body {
 	backdrop-filter: blur(20px) brightness(130%);
 }
 
-h2 {
+* {
 	word-wrap: break-word;
 }
 
