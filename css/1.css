@@ -43,8 +43,9 @@ body {
 	padding-bottom: 10px;
 }
 
-.section h2 .btn-group {
-	margin-bottom: 10px;
+.section h2 .btn-group,
+.section .section h3 .btn-group {
+	margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
