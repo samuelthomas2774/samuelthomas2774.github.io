@@ -3,9 +3,9 @@
 <head>
 	<title>Samuel Elliott</title>
 	
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -95,7 +95,7 @@
 		<div class="section fade-in-on-scroll blur-background">
 			<div class="anchor" id="smime"></div>
 			<div class="container">
-			    <h2><div class="btn-group pull-right">
+				<h2><div class="btn-group pull-right">
 					<a class="btn btn-default" href="https://certificates.samuelthomas.xyz/samuel-samuelthomas.ml.pem"><span class="glyphicon glyphicon-arrow-down"></span> Download</a>
 					<a class="btn btn-default" href="https://certificates.samuelthomas.xyz/samuel-samuelthomas.ml.mobileconfig"><span class="glyphicon glyphicon-arrow-down"></span> Download configuration profile</a>
 				</div>S/MIME certificate samuel@samuelthomas.ml</h2>
@@ -163,7 +163,7 @@ xQIDAQAB
 		<div class="section fade-in-on-scroll blur-background">
 			<div class="anchor" id="pgp"></div>
 			<div class="container">
-			    <h2><div class="btn-group pull-right">
+				<h2><div class="btn-group pull-right">
 					<a class="btn btn-default" href="https://certificates.samuelthomas.xyz/E43DC4D6.asc"><span class="glyphicon glyphicon-arrow-down"></span> Download</a>
 				</div>PGP Samuel Elliott &lt;samuel@samuelthomas.ml&gt; (E43D C4D6)</h2>
 				<p>Valid for:</p>
@@ -499,10 +499,32 @@ bhRUdRd+V8ytvxqMMgwzqIL3fzKizg==
 	</div>
 	
 	<!-- jQuery + Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	<script src="js/fadein.js"></script>
 	<script src="js/background.js"></script>
+	
+	<!-- Matomo -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push([ "trackPageView" ]);
+		_paq.push([ "enableLinkTracking" ]);
+		(function() {
+			var url = "https://matomo.fancy.org.uk";
+			_paq.push([ "setTrackerUrl", url + "/piwik.php" ]);
+			_paq.push([ "setSiteId", "3" ]);
+			
+			var script = document.createElement("script"),
+				firstscript = document.getElementsByTagName("script")[0];
+			script.type = "text/javascript";
+			script.async = true;
+			script.defer = true;
+			script.src = url + "/piwik.js";
+			firstscript.parentNode.insertBefore(script, firstscript);
+		})();
+	</script>
+	<noscript><img src="https://matomo.fancy.org.uk/piwik.php?idsite=3&amp;rec=1" style="border: 0;" alt="" /></noscript>
 </body>
 </html>
