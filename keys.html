@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+	<title>Samuel Elliott</title>
+	
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="css/1.css" />
+	
+	<script>document.documentElement.className += " js";</script>
+</head>
+<body>
+	<div class="background"></div>
+	
+	<div class="page">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href=".">Samuel Elliott</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href=".">samuelthomas2774.github.io</a></li>
+						<li><a href="https://samuelthomas.ml">samuelthomas.ml</a></li>
+						<li><a href=".#contact">Contact</a></li>
+						<li><a href="https://github.com/samuelthomas2774">GitHub</a></li>
+						<li class="dropdown js" id="navbar-dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">Projects</li>
+								<li><a href=".#devs-samuelthomas-ml">devs.samuelthomas.ml</a></li>
+								<li><a href=".#samuelthomas-ml-v4">samuelthomas.ml v4</a></li>
+								<li><a href=".#oauth-client">OAuth Client</a></li>
+								<li><a href=".#asteroid">Asteroid</a></li>
+								<li><a href=".#asteroid-database-objects">Asteroid Database Objects</a></li>
+								<li><a href=".#jquery-emoji">jQuery Emoji</a></li>
+								<li><a href=".#jquery-icons">jQuery Icons</a></li>
+								<li><a href=".#project-w">Project W</a></li>
+								<li><a href=".#bd-fixes">BetterDiscord CSS fixes</a></li>
+								<li><a href=".#bd-hide-sidebars">BetterDiscord Hide Sidebars</a></li>
+								<li class="divider" role="separator"></li>
+								<li class="dropdown-header">Other</li>
+								<li><a href=".#airport">airport</a></li>
+								<li><a href=".#thewalnutspi">The Walnuts Pi</a></li>
+								<li class="divider" role="separator"></li>
+								<li class="dropdown-header">Business websites</li>
+								<li><a href=".#eelliottfineart">Emily Elliott's Fine Art</a></li>
+								<li><a href=".#celliottbuilding">C Elliott Building Ltd</a></li>
+								<li class="divider" role="separator"></li>
+								<li><a href="https://github.com/samuelthomas2774/samuelthomas2774.github.io">samuelthomas2774.github.io on GitHub</a></li>
+								<li class="divider" role="separator"></li>
+								<li><a href="javascript:$.fadein.reset();">Reset scrolling animation</a></li>
+								<li><a href="javascript:$('html,body').scrollTop(0);">Scroll to the top</a></li>
+								<li><a href="javascript:$('html,body').scrollTop(0);$.fadein.reset();">Scroll to the top and reset scrolling animation</a></li>
+								<li><a href="javascript:history.pushState(null, null, window.location.pathname + window.location.search);">Delete url hash</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/.navbar-collapse -->
+			</div>
+		</nav>
+		
+		<div class="jumbotron">
+			<div class="container">
+				<h2>S/MIME certificates and PGP keys</h2>
+			</div>
+		</div>
+		
+		<noscript>
+			<div class="container">
+				<p class="alert alert-warning"><span class="glyphicon glyphicon-alert"></span> <strong>You have JavaScript disabled.</strong> Don't you want to see the fancy scrolling animation?</p>
+			</div>
+		</noscript>
+		
+		<div class="fade-out-on-scroll" style="display: none;">
+			<div class="container text-center">
+				<h3><span class="glyphicon glyphicon-arrow-down"></span></h3>
+				<p>Scroll down to see more</p>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="anchor" id="smime"></div>
+			<div class="container">
+			    <h2><div class="btn-group pull-right">
+					<a class="btn btn-default" href="https://certificates.samuelthomas.xyz/samuel-samuelthomas.ml.pem"><span class="glyphicon glyphicon-arrow-down"></span> Download</a>
+					<a class="btn btn-default" href="https://certificates.samuelthomas.xyz/samuel-samuelthomas.ml.mobileconfig"><span class="glyphicon glyphicon-arrow-down"></span> Download configuration profile</a>
+				</div>S/MIME certificate samuel@samuelthomas.ml</h2>
+				<p>Valid for:</p>
+				<ul>
+					<li>samuel@samuelthomas.ml</li>
+					<li>S.Elliott@server.samuelthomas.ml</li>
+					<li>s.elliott@server.samuelthomas.ml</li>
+					<li>samuelthomas2774@icloud.com</li>
+					<li>samuelthomas2774@outlook.com</li>
+					<li>samuelthomas2774@gmail.com</li>
+					<li>samuel.elliott@walnuts.milton-keynes.sch.uk</li>
+				</ul>
+				
+				<details>
+					<summary>Show certificate and public key</summary>
+					<div class="row">
+						<div class="col-lg-6">
+							<h4>Certificate</h4>
+							<pre>-----BEGIN CERTIFICATE-----
+MIIEkzCCA3ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBpjEwMC4GA1UEAwwnSW50
+ZXJtZWRpYXRlQ0FfU0VSVkVSLlNBTVVFTFRIT01BUy5NTF8xMRYwFAYDVQQKDA1T
+YW11ZWwgVGhvbWFzMS0wKwYDVQQLDCRNQUNPU1ggT3BlbkRpcmVjdG9yeSBJbnRl
+cm1lZGlhdGUgQ0ExKzApBgkqhkiG9w0BCQEWHGFkbWluQHNlcnZlci5zYW11ZWx0
+aG9tYXMubWwwHhcNMTcwMjE3MTMwMzA2WhcNMTgwMjE3MTMwMzA2WjBVMR8wHQYD
+VQQDDBZzYW11ZWxAc2FtdWVsdGhvbWFzLm1sMQswCQYDVQQGEwJHQjElMCMGCSqG
+SIb3DQEJARYWc2FtdWVsQHNhbXVlbHRob21hcy5tbDCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBANFhBINCWHLX/WM6C9oMMmdU2kz27eOOMeQKA2IW+lMF
+UlmwsxsMCFHfoy8qxU7ICVidxmS7QYWjo2g07npmBHtWLnRkDXpUQqq9W36XX9DT
+CPB95zjSTCE+fj7rui7UpBj9VXoR7W+ESsyzD89erbk36rmO9FgNhHDU6a24z8vA
+uM3tp7PCdkVu3jBIW4NYQPamUJhScf6bCY+C8Fl/Khlz/fEj1hq1nYXUFGWYZWCJ
+UFs2C0DmjkG2XkkApaIR6Uuj/ZXIOqVxyI4D4H5c8eI+ds1dGd4byEpyYUWWlO28
+vPQ12oinYvq6wuhdPSbQjWfSQiCPOqHFmQHT/Pe8a8UCAwEAAaOCARowggEWMA4G
+A1UdDwEB/wQEAwIF4DAWBgNVHSUBAf8EDDAKBggrBgEFBQcDBDCB6wYDVR0RBIHj
+MIHggRZzYW11ZWxAc2FtdWVsdGhvbWFzLm1sgSBTLkVsbGlvdHRAc2VydmVyLnNh
+bXVlbHRob21hcy5tbIEgcy5lbGxpb3R0QHNlcnZlci5zYW11ZWx0aG9tYXMubWyB
+G3NhbXVlbHRob21hczI3NzRAaWNsb3VkLmNvbYEcc2FtdWVsdGhvbWFzMjc3NEBv
+dXRsb29rLmNvbYEac2FtdWVsdGhvbWFzMjc3NEBnbWFpbC5jb22BK3NhbXVlbC5l
+bGxpb3R0QHdhbG51dHMubWlsdG9uLWtleW5lcy5zY2gudWswDQYJKoZIhvcNAQEL
+BQADggEBAEwnalVLejjxLpdIAvx2a2ooBs0fH7Z6u39qulCf1e4NRFuUJ+quIXHT
+Fc9KSGNlK67hWKr9cqWi8iETRBHXjLNng2NRD9BQOJDeu2GxpIclF4kbnw8z6PaM
+ig7C/f41J6YyqjDXXdzUxzeIlPx5j3s/HXMIvsEBsOgTKlvx+iS2x024+sRBnYaa
+/4GvD3wPpq3ReV9JT7mKAHg1TvSrPWMGECjz6xz3XXbG91QzymzuaOxjMsRsYZNG
+ndFcBPR/BymH4O+rK8ITEDSV9VDOqkh4/XbmmZc2s5FE3z4M6W+7Y9Y9reUBG40c
+bqOlFrHeah+z7LUcXKGwhfshEfP+Dsc=
+-----END CERTIFICATE-----</pre>
+						</div>
+						<div class="col-lg-6">
+							<h4>Public key</h4>
+							<pre>-----BEGIN RSA PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0WEEg0JYctf9YzoL2gwy
+Z1TaTPbt444x5AoDYhb6UwVSWbCzGwwIUd+jLyrFTsgJWJ3GZLtBhaOjaDTuemYE
+e1YudGQNelRCqr1bfpdf0NMI8H3nONJMIT5+Puu6LtSkGP1VehHtb4RKzLMPz16t
+uTfquY70WA2EcNTprbjPy8C4ze2ns8J2RW7eMEhbg1hA9qZQmFJx/psJj4LwWX8q
+GXP98SPWGrWdhdQUZZhlYIlQWzYLQOaOQbZeSQClohHpS6P9lcg6pXHIjgPgflzx
+4j52zV0Z3hvISnJhRZaU7by89DXaiKdi+rrC6F09JtCNZ9JCII86ocWZAdP897xr
+xQIDAQAB
+-----END RSA PUBLIC KEY-----</pre>
+						</div>
+					</div>
+				</details>
+			</div>
+		</div>
+		
+		<div class="section fade-in-on-scroll blur-background">
+			<div class="anchor" id="smime"></div>
+			<div class="container">
+			    <h2><div class="btn-group pull-right">
+					<a class="btn btn-default" href="https://certificates.samuelthomas.xyz/E43DC4D6.asc"><span class="glyphicon glyphicon-arrow-down"></span> Download</a>
+				</div>PGP Samuel Elliott &lt;samuel@samuelthomas.ml&gt; (E43DC4D6)</h2>
+				<p>Valid for:</p>
+				<ul>
+					<li>samuel@samuelthomas.ml</li>
+					<li>S.Elliott@server.samuelthomas.ml</li>
+					<li>s.elliott@server.samuelthomas.ml</li>
+					<li>samuelthomas2774@icloud.com</li>
+					<li>samuelthomas2774@outlook.com</li>
+					<li>samuelthomas2774@gmail.com</li>
+					<li>samuel.elliott@walnuts.milton-keynes.sch.uk</li>
+				</ul>
+				
+				<details>
+					<summary>Show public key</summary>
+					<h4>Public key</h4>
+					<pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+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
+=1nlI
+-----END PGP PUBLIC KEY BLOCK-----</pre>
+				</details>
+			</div>
+		</div>
+		
+		<footer class="footer gray-background">
+			<div class="container">
+				<p>Proudly presented by myself.</p>
+				<p>Copyright &copy; 2017 Samuel Elliott</p>
+				<p>This website's source code is hosted at <a href="https://github.com/samuelthomas2774/samuelthomas2774.github.io">https://github.com/samuelthomas2774/samuelthomas2774.github.io</a>.</p>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- jQuery + Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script src="js/fadein.js"></script>
+	<script src="js/background.js"></script>
+</body>
+</html>
