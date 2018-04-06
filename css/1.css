@@ -21,6 +21,13 @@ body {
 	background-color: #fbfbfb;
 }
 
+.navbar.navbar-fixed-top + .jumbotron {
+	margin-top: -51px;
+}
+.navbar.navbar-fixed-top + .jumbotron > .container {
+	margin-top: 51px;
+}
+
 .gray-background {
 	background: #eeeeee;
 }
