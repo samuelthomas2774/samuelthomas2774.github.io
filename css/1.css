@@ -107,7 +107,9 @@ body {
 	margin-left: 5px;
 	transition: transform 0.2s ease;
 }
-.icon-facebook:hover, .icon-twitter:hover, .icon-reddit:hover, .icon-github:hover, .icon-keybase:hover, .icon-discord:hover {
+.icon-facebook:hover, .icon-twitter:hover, .icon-reddit:hover, .icon-github:hover, .icon-keybase:hover, .icon-discord:hover,
+.icon-facebook.ui-draggable-dragging, .icon-twitter.ui-draggable-dragging, .icon-reddit.ui-draggable-dragging, .icon-github.ui-draggable-dragging,
+.icon-keybase.ui-droppable-hover {
 	transform: scale(1.1);
 }
 .jumbotron .icon-facebook, .jumbotron .icon-twitter, .jumbotron .icon-reddit, .jumbotron .icon-github, .jumbotron .icon-keybase, .jumbotron .icon-discord {
