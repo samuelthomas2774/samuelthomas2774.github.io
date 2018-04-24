@@ -15,7 +15,7 @@
 	
 	<script>document.documentElement.className += " js";</script>
 </head>
-<body data-spy="scroll" data-target="#navbar" data-offset="120">
+<body{% if page.url == "/" %} data-spy="scroll" data-target="#navbar"{% endif %} data-offset="120">
 	<div class="background"></div>
 	
 	<div class="page">
