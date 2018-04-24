@@ -54,11 +54,21 @@ body {
 .section {
 	.container {
 		padding-bottom: 10px;
+		
+		&:empty {
+			// This only hides the container
+			// The section is still there but in most cases just shows a margin that will be collapsed into a header
+			display: none;
+		}
 	}
 	
 	h2 .btn-group,
 	.section h3 .btn-group {
 		margin-bottom: 15px;
+	}
+	
+	p:first-child {
+		margin-top: 10px;
 	}
 	
 	@media screen and (min-width: 768px) {
