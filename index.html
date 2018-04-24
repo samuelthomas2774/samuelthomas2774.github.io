@@ -5,6 +5,22 @@ keybase_script: true
 
 <div class="section-header fade-in-on-scroll">
 	<div class="container">
+		<h1 class="fade-in-on-scroll">Recent posts</h1>
+	</div>
+</div>
+
+{% for post in site.posts %}
+	<div class="post section fade-in-on-scroll blur-background">
+		<div class="container">
+			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+			<p><small>{{ post.date | date_to_long_string: "ordinal" }}</small></p>
+			{{ post.excerpt }}
+		</div>
+	</div>
+{% endfor %}
+
+<div class="section-header fade-in-on-scroll">
+	<div class="container">
 		<h1 class="fade-in-on-scroll">Projects</h1>
 	</div>
 </div>
