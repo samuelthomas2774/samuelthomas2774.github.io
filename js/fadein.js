@@ -111,3 +111,18 @@ $.fadein.reset = function() {
 };
 
 $.fadein.refresh();
+
+$(document).ready(function() {
+	$(".reset-scrolling-animation-link").on("click", function(event) {
+		$.fadein.reset();
+		event.preventDefault();
+	});
+	$(".scroll-to-top-link").on("click", function(event) {
+		$("html, body").scrollTop(0);
+		event.preventDefault();
+	});
+	$(".delete-url-hash-link").on("click", function(event) {
+		history.pushState(null, null, window.location.pathname + window.location.search);
+		event.preventDefault();
+	});
+});
