@@ -1,4 +1,4 @@
-window._paq = _paq || [];
+window._paq = window._paq || [];
 
 // Tracker methods like "setCustomDimension" should be called before "trackPageView"
 _paq.push([ 'trackPageView' ]);
