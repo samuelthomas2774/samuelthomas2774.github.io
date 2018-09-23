@@ -37,12 +37,14 @@ body {
     background: #eeeeee;
 }
 
-.octicon {
+.octicon, svg.icon-gitlab {
     vertical-align: middle;
 }
 
 .btn-primary .octicon,
-.label .octicon {
+.label .octicon,
+.btn-primary svg.icon-gitlab,
+.label svg.icon-gitlab {
     fill: currentcolor;
     vertical-align: -3px;
 }
