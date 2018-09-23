@@ -102,7 +102,7 @@ body {
     top: -70px;
 }
 
-.icon-facebook, .icon-twitter, .icon-reddit, .icon-github, .icon-keybase, .icon-discord, .icon-mastodon {
+.icon-facebook, .icon-twitter, .icon-reddit, .icon-github, .icon-gitlab:not(svg), .icon-keybase, .icon-discord, .icon-mastodon {
     font-size: 0px;
     background: center no-repeat / 20px;
     width: 20px;
@@ -114,18 +114,18 @@ body {
     margin-left: 5px;
     transition: transform 0.2s ease;
 }
-.icon-facebook:hover, .icon-twitter:hover, .icon-reddit:hover, .icon-github:hover, .icon-keybase:hover, .icon-discord:hover, .icon-mastodon:hover,
+.icon-facebook:hover, .icon-twitter:hover, .icon-reddit:hover, .icon-github:hover, .icon-gitlab:not(svg):hover, .icon-keybase:hover, .icon-discord:hover, .icon-mastodon:hover,
 .icon-facebook.ui-draggable-dragging, .icon-twitter.ui-draggable-dragging, .icon-reddit.ui-draggable-dragging, .icon-github.ui-draggable-dragging,
 .icon-keybase.ui-droppable-hover {
     transform: scale(1.1);
 }
-.jumbotron .icon-facebook, .jumbotron .icon-twitter, .jumbotron .icon-reddit, .jumbotron .icon-github, .jumbotron .icon-keybase, .jumbotron .icon-discord, .jumbotron .icon-mastodon {
+.jumbotron .icon-facebook, .jumbotron .icon-twitter, .jumbotron .icon-reddit, .jumbotron .icon-github, .jumbotron .icon-gitlab:not(svg), .jumbotron .icon-keybase, .jumbotron .icon-discord, .jumbotron .icon-mastodon {
     background-size: 22px;
     width: 22px;
     height: 22px;
     line-height: 22px;
 }
-.icon-facebook a, .icon-twitter a, .icon-reddit a, .icon-github a, .icon-keybase a, .icon-discord a, .icon-mastodon a {
+.icon-facebook a, .icon-twitter a, .icon-reddit a, .icon-github a, .icon-gitlab:not(svg) a, .icon-keybase a, .icon-discord a, .icon-mastodon a {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -141,6 +141,9 @@ body {
 }
 .icon-github {
     background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg");
+}
+.icon-gitlab:not(svg) {
+    background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gitlab.svg");
 }
 .icon-keybase {
     background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/keybase.svg");
