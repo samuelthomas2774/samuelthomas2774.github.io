@@ -1,6 +1,7 @@
-$(document).ready($.refreshstars = function() {
-    $('.github-stars').each(function() {
+$(document).ready($.refreshgitlabstars = function() {
+    $('.gitlab-stars').each(function() {
         var $this = $(this),
+            host = $this.attr('data-gitlab-server') || 'gitlab.com',
             repository = $this.attr('data-repository'),
             content = $this.attr('data-updatingcontent'),
             beforecontent = $this.attr('data-beforecontent') || '',
@@ -11,13 +12,13 @@ $(document).ready($.refreshstars = function() {
             $this.html(content);
 
         $.ajax({
-            url: 'https://api.github.com/repos/' + repository,
+            url: 'https://' + host + '/api/v4/projects/' + repository,
             method: 'GET',
             success(response) {
                 if (typeof response == 'string')
                     response = $.parseJSON(response);
 
-                $this.html(beforecontent + response.stargazers_count + aftercontent);
+                $this.html(beforecontent + response.star_count + aftercontent);
             },
             error() {
                 $this.html(errorcontent);
