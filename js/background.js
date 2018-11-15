@@ -1,6 +1,6 @@
 var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion)');
 
-$(document).on('scroll', function() {
+$(document).on('scroll', function () {
     var scrolltop = -$(document).scrollTop(),
         offset = scrolltop / 5;
 

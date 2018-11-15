@@ -1,5 +1,5 @@
-$(document).ready($.refreshstars = function() {
-    $('.github-stars').each(function() {
+$(document).ready($.refreshstars = function () {
+    $('.github-stars').each(function () {
         var $this = $(this),
             repository = $this.attr('data-repository'),
             content = $this.attr('data-updatingcontent'),
@@ -7,15 +7,17 @@ $(document).ready($.refreshstars = function() {
             aftercontent = $this.attr('data-aftercontent') || '',
             errorcontent = $this.attr('data-errorcontent');
 
-        if (typeof content == 'string')
+        if (typeof content === 'string') {
             $this.html(content);
+        }
 
         $.ajax({
             url: 'https://api.github.com/repos/' + repository,
             method: 'GET',
             success(response) {
-                if (typeof response == 'string')
+                if (typeof response === 'string') {
                     response = $.parseJSON(response);
+                }
 
                 $this.html(beforecontent + response.stargazers_count + aftercontent);
             },

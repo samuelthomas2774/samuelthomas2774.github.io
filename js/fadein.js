@@ -5,7 +5,7 @@ var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion)');
 
 $.fadein = {};
 
-$.fadein.refresh = function() {
+$.fadein.refresh = function () {
     var headerheight = $('nav').outerHeight(true),
         scrolltop = $(document).scrollTop() + headerheight,
         windowheight = $(window).height() - headerheight,
