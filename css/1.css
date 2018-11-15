@@ -28,9 +28,16 @@ body {
     margin-top: 51px;
 }
 
-.navbar-nav > li > .dropdown-menu {
-    max-height: calc(100vh - 100px);
-    overflow-y: scroll;
+@media screen and (max-width: 768px) {
+    .navbar-fixed-top .navbar-collapse {
+        max-height: calc(100vh - 100px);
+    }
+}
+@media screen and (min-width: 768px) {
+    .navbar-nav > li > .dropdown-menu {
+        max-height: calc(100vh - 100px);
+        overflow-y: scroll;
+    }
 }
 
 .gray-background {
