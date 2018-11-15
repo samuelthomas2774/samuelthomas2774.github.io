@@ -4,7 +4,7 @@ window._paq = window._paq || [];
 _paq.push([ 'trackPageView' ]);
 _paq.push([ 'enableLinkTracking' ]);
 
-(function() {
+(function () {
     var url = 'https://matomo.fancy.org.uk';
     _paq.push([ 'setTrackerUrl', url + '/piwik.php' ]);
     _paq.push([ 'setSiteId', '3' ]);
