@@ -41,18 +41,15 @@
                             <ul class="dropdown-menu">
                                 <li class="dropdown-header">Projects</li>
                                 <li><a href="#speechmore">SpeechMore</a></li>
+                                <li><a href="#hap-server">HomeKit Accessory Server</a></li>
+                                <li><a href="#hap-server-authenticate-pam">PAM Authentication Handler for HomeKit Accessory Server</a></li>
+                                <li><a href="#homebridge-vestel-network-remote">Vestel TV Network Remote plugin for Homebridge</a></li>
                                 <li><a href="#oauth-client">OAuth Client</a></li>
                                 <li><a href="#node-acp">node-acp</a></li>
                                 <li><a href="#acp-php">acp-php</a></li>
                                 <li><a href="#icloud-api">iCloud API</a></li>
                                 <li><a href="#icloud-drive-fs">iCloud Drive Filesystem</a></li>
-                                <li><a href="#devs-samuelthomas-ml">samuelthomas.xyz</a></li>
-                                <li><a href="#samuelthomas-ml-v4">samuelthomas.gq v4</a></li>
-                                <li><a href="#asteroid">Asteroid</a></li>
-                                <li><a href="#asteroid-database-objects">Asteroid Database Objects</a></li>
-                                <li><a href="#jquery-emoji">jQuery Emoji</a></li>
-                                <li><a href="#jquery-icons">jQuery Icons</a></li>
-                                <li><a href="#project-w">Project W</a></li>
+                                <li><a href="#discord-apt-repository">APT Repository for Discord</a></li>
                                 <li><a href="#atom-discord-presence">Atom Discord Presence</a></li>
                                 <li><a href="#discord-keybase-integration">Discord Keybase Integration</a></li>
                                 <li><a href="#discord-module-search">Discord Module Search</a></li>
@@ -60,6 +57,12 @@
                                 <li><a href="#bd-fixes">BetterDiscord CSS fixes</a></li>
                                 <li><a href="#bd-hide-sidebars">BetterDiscord Hide Sidebars</a></li>
                                 <li><a href="#discord-vips">Discord VIPs</a></li>
+                                <li><a href="#devs-samuelthomas-ml">samuelthomas.xyz</a></li>
+                                <li><a href="#samuelthomas-ml-v4">samuelthomas.ml v4</a></li>
+                                <li><a href="#asteroid">Asteroid</a></li>
+                                <li><a href="#asteroid-database-objects">Asteroid Database Objects</a></li>
+                                <li><a href="#jquery-emoji">jQuery Emoji</a></li>
+                                <li><a href="#jquery-icons">jQuery Icons</a></li>
                                 <li class="divider" role="separator"></li>
                                 <li class="dropdown-header">Contributing to</li>
                                 <li><a href="#betterdiscord">BetterDiscord v2</a></li>
@@ -92,15 +95,13 @@
                 <p>I design websites, write, test and play with code and administer servers.</p>
 
                 <ul class="list-inline">
-                    <li class="icon-facebook" data-keybase-url="https://www.facebook.com/samuelthomas2774/posts/821319944715760"><a href="https://facebook.com/samuelthomas2774">Facebook</a></li>
+                    <li class="icon-gitlab"><a href="https://gitlab.fancy.org.uk/samuel">Fancy GitLab</a></li>
+                    <li class="icon-github" data-keybase-url="https://gist.github.com/1d1db601607a025b3ca3a030dac8b20c"><a href="https://github.com/samuelthomas2774">GitHub</a></li>
+                    <li class="icon-mastodon"><a href="https://mastodon.fancy.org.uk/@samuel">Mastodon</a></li>
+                    <li class="icon-keybase" title="Drag the Facebook, Twitter, Reddit or GitHub icon here to view the Keybase proof"><a href="https://keybase.io/samuelthomas2774">Keybase</a></li>
                     <li class="icon-twitter" data-keybase-url="https://twitter.com/_samuelelliott/status/941786718717530112"><a href="https://twitter.com/_samuelelliott">Twitter</a></li>
                     <li class="icon-reddit" data-keybase-url="https://www.reddit.com/r/KeybaseProofs/comments/6pfy0k/my_keybase_proof_redditsamuelthomas2774/"><a href="https://reddit.com/user/samuelthomas2774/">Reddit</a></li>
-                    <li class="icon-github" data-keybase-url="https://gist.github.com/1d1db601607a025b3ca3a030dac8b20c"><a href="https://github.com/samuelthomas2774">GitHub</a></li>
-                    <li class="icon-gitlab"><a href="https://gitlab.fancy.org.uk/samuel">Fancy GitLab</a></li>
-                    <!-- <li class="icon-gitlab"><a href="https://gitlab.com/samuelthomas2774">GitLab</a></li> -->
-                    <li class="icon-keybase" title="Drag the Facebook, Twitter, Reddit or GitHub icon here to view the Keybase proof"><a href="https://keybase.io/samuelthomas2774">Keybase</a></li>
                     <li class="icon-discord"><a href="https://discordapp.com/invite/qc9SZwq">Discord</a></li>
-                    <li class="icon-mastodon"><a href="https://mastodon.fancy.org.uk/@samuel">Mastodon</a></li>
                 </ul>
             </div>
         </div>
@@ -138,6 +139,72 @@
         </div>
 
         <div class="section fade-in-on-scroll blur-background">
+            <div class="anchor" id="hap-server"></div>
+            <div class="container">
+                <h2><div class="btn-group pull-right">
+                    <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/hap-server/hap-server"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
+                    <a class="btn btn-default" href="https://www.npmjs.com/package/@hap-server/hap-server"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> npm</a>
+                    <a class="btn btn-default" href="https://gitlab.fancy.org.uk/hap-server/hap-server/forks/new"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
+                    <a class="btn btn-default" href="https://gitlab.fancy.org.uk/hap-server/hap-server/tags"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
+                </div>HomeKit Accessory Server <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-info text-uppercase">Open source</span> <span class="label label-warning text-uppercase">In development</span>
+                    <span class="label label-default js">
+                        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+                        <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="25">
+                            <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
+                        </span>
+                    </span>
+                </small></h2>
+                <p>Home automation system based on HomeKit.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="anchor" id="hap-server-authenticate-pam"></div>
+                        <div class="section fade-in-on-scroll blur-background clearfix">
+                            <h3><div class="btn-group btn-group-sm pull-right">
+                                <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/hap-server/authenticate-pam"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
+                                <a class="btn btn-default" href="https://www.npmjs.com/package/@hap-server/authenticate-pam"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> npm</a>
+                                <a class="btn btn-default" href="https://gitlab.fancy.org.uk/hap-server/authenticate-pam/forks/new"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
+                                <a class="btn btn-default" href="https://gitlab.fancy.org.uk/hap-server/authenticate-pam/tags"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
+                            </div>PAM Authentication Handler <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-info text-uppercase">Open source</span>
+                                <span class="label label-default js">
+                                    <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+                                    <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="26">
+                                        <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
+                                    </span>
+                                </span>
+                            </small></h3>
+                            <p>PAM Authentication Handler for HomeKit Accessory Server.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="anchor" id="homebridge-vestel-network-remote"></div>
+                        <div class="section fade-in-on-scroll blur-background clearfix">
+                            <h3><div class="btn-group btn-group-sm pull-right">
+                                <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/homebridge-vestel-network-remote"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
+                                <a class="btn btn-default" href="https://www.npmjs.com/package/homebridge-vestel-network-remote"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> npm</a>
+                                <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/homebridge-vestel-network-remote/forks/new"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
+                                <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/homebridge-vestel-network-remote/tags"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
+                            </div>Vestel TV Network Remote plugin for Homebridge <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-info text-uppercase">Open source</span>
+                                <span class="label label-default js">
+                                    <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+                                    <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="20">
+                                        <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
+                                    </span>
+                                </span>
+                            </small></h3>
+                            <p>Homebridge plugin for controlling Vestel smart TVs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="oauth-client"></div>
             <div class="container">
                 <h2><div class="btn-group pull-right">
@@ -165,7 +232,6 @@
                     <li>Amazon <a href="https://amazon.co.uk">https://amazon.co.uk</a></li>
                     <li>Disqus <a href="https://disqus.com">https://disqus.com</a></li>
                     <li>Instagram <a href="https://instagram.com">https://instagram.com</a></li>
-                    <li>samuelthomas.gq <a href="https://samuelthomas.gq">https://samuelthomas.gq</a> (my website)</li>
                     <li>TeamViewer <a href="https://teamviewer.com">https://teamviewer.com</a></li>
                     <li>WordPress.com <a href="https://wordpress.com">https://wordpress.com</a></li>
                     <li>Eventbrite <a href="https://eventbrite.com">https://eventbrite.com</a></li>
@@ -256,139 +322,29 @@
             </div>
         </div>
 
-        <div class="section fade-in-on-scroll blur-background">
-            <div class="anchor" id="devs-samuelthomas-ml"></div>
-            <div class="container">
-                <h2><div class="btn-group pull-right">
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
-                    <a class="btn btn-primary" href="https://samuelthomas.xyz"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
-                </div>samuelthomas.xyz <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span></small></h2>
-                <p>Social website built on <a href="#asteroid">Asteroid</a>. It's accessible at <a href="https://samuelthomas.xyz">https://samuelthomas.xyz</a>. You currently need an invitation code to register. This hasn't been updated in a while and currently does not work.</p>
-            </div>
-        </div>
-
-        <div class="section fade-in-on-scroll blur-background">
-            <div class="anchor" id="samuelthomas-ml-v4"></div>
-            <div class="container">
-                <h2><div class="btn-group pull-right">
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
-                    <a class="btn btn-primary" href="https://samuelthomas.gq/v4/index/version?version=4"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
-                </div>samuelthomas.gq v4 <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-danger text-uppercase">Discontinued</span></small></h2>
-                <p>Older version of samuelthomas.gq - still online and used by default.</p>
-            </div>
-        </div>
-
-        <div class="section fade-in-on-scroll blur-background">
-            <div class="anchor" id="asteroid"></div>
-            <div class="container">
-                <h2><div class="btn-group pull-right">
-                    <a class="btn btn-primary" href="https://github.com/asteroid-php/asteroid"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
-                    <a class="btn btn-default" href="https://asteroid.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
-                    <a class="btn btn-default" href="https://github.com/asteroid-php/asteroid/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
-                    <a class="btn btn-default" href="https://github.com/asteroid-php/asteroid/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                </div>Asteroid <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-info text-uppercase">Open source</span>
-                    <span class="label label-default js">
-                        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
-                        <span class="github-stars" data-repository="asteroid-php/asteroid">
-                            <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
-                        </span>
-                    </span>
-                </small></h2>
-                <p>A PHP web application framework with advanced features such as <a href="#asteroid-database-objects">Database Objects</a>, Package Manager, mail sending, subcontrollers, a URL router, Twig integration and more. This hasn't been updated in a while and does not work on the latest version of PHP.</p>
-            </div>
-        </div>
-
-        <div class="section fade-in-on-scroll blur-background">
-            <div class="anchor" id="asteroid-database-objects"></div>
-            <div class="container">
-                <h2><div class="btn-group pull-right">
-                    <button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
-                </div>Asteroid Database Objects</h2>
-                <p>Database Objects is a feature of Asteroid - it is currently private. It's used in <a href="#devs-samuelthomas-ml">samuelthomas.xyz</a>.</p>
-            </div>
-        </div>
-
         <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="anchor" id="jquery-emoji"></div>
+                        <div class="anchor" id="discord-apt-repository"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
                             <h3><div class="btn-group btn-group-sm pull-right">
-                                <a class="btn btn-primary" href="https://github.com/samuelthomas2774/jquery-emoji"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
-                                <a class="btn btn-default" href="https://samuelthomas2774.github.io/jquery-emoji/test/test.html"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
-                                <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-emoji/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
-                                <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-emoji/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>jQuery Emoji <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-info text-uppercase">Open source</span>
+                                <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
+                                <a class="btn btn-primary" href="https://samuel.repo.ml/discord-apt-repository/"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
+                                <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
+                                <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
+                            </div>APT Repository for Discord <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-info text-uppercase">Open source</span>
                                 <span class="label label-default js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
-                                    <span class="github-stars" data-repository="samuelthomas2774/jquery-emoji">
+                                    <span class="github-stars" data-repository="samuelthomas2774/atom-discord-presence">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
                                     </span>
                                 </span>
                             </small></h3>
-                            <p>A library for quickly adding text emoji support to your site.</p>
-                            <p>For a list of supported emojis <a href="https://samuelthomas.gq/about/emoji">click here</a>.</p>
+                            <p>Discord Rich Presence for Atom.</p>
                         </div>
                     </div>
 
-                    <div class="col-md-6">
-                        <div class="anchor" id="jquery-icons"></div>
-                        <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
-                                <a class="btn btn-primary" href="https://github.com/samuelthomas2774/jquery-icons-parser"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
-                                <a class="btn btn-default" href="https://samuelthomas2774.github.io/jquery-icons-parser/example.htm"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
-                                <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-icons-parser/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
-                                <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-icons-parser/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>jQuery Icons <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-info text-uppercase">Open source</span>
-                                <span class="label label-default js">
-                                    <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
-                                    <span class="github-stars" data-repository="samuelthomas2774/jquery-icons-parser">
-                                        <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
-                                    </span>
-                                </span>
-                            </small></h3>
-                            <p>A library for quickly adding icons to your site. Icons from these libraries are supported:</p>
-                            <ul>
-                                <li>jQuery UI Icons</li>
-                                <li>Glyphicons</li>
-                                <li>Font Awesome</li>
-                                <li>Framework7 Icons</li>
-                                <li>Ionicons</li>
-                                <li>Typicons</li>
-                                <li>Foundation Icons</li>
-                                <li>Metro UI Icons</li>
-                                <li>Elusive Icons</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section fade-in-on-scroll blur-background">
-            <div class="anchor" id="project-w"></div>
-            <div class="container">
-                <h2><div class="btn-group pull-right">
-                    <button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
-                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
-                </div>Project W</h2>
-                <p>An in-development project - currently private.</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="container">
-                <div class="row">
                     <div class="col-md-6">
                         <div class="anchor" id="atom-discord-presence"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
@@ -533,6 +489,122 @@
             </div>
         </div>
 
+        <div class="section fade-in-on-scroll blur-background">
+            <div class="anchor" id="devs-samuelthomas-ml"></div>
+            <div class="container">
+                <h2><div class="btn-group pull-right">
+                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
+                    <a class="btn btn-primary" href="https://samuelthomas.xyz"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
+                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
+                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
+                </div>samuelthomas.xyz <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-danger text-uppercase">Discontinued</span></small></h2>
+                <p>Social website built on <a href="#asteroid">Asteroid</a>. It's accessible at <a href="https://samuelthomas.xyz">https://samuelthomas.xyz</a>. You currently need an invitation code to register. This hasn't been updated in a while and currently does not work.</p>
+            </div>
+        </div>
+
+        <div class="section fade-in-on-scroll blur-background">
+            <div class="anchor" id="samuelthomas-ml-v4"></div>
+            <div class="container">
+                <h2><div class="btn-group pull-right">
+                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
+                    <button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
+                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
+                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
+                </div>samuelthomas.ml v4 <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-danger text-uppercase">Discontinued</span></small></h2>
+                <p>Older version of samuelthomas.ml.</p>
+            </div>
+        </div>
+
+        <div class="section fade-in-on-scroll blur-background">
+            <div class="anchor" id="asteroid"></div>
+            <div class="container">
+                <h2><div class="btn-group pull-right">
+                    <a class="btn btn-primary" href="https://github.com/asteroid-php/asteroid"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
+                    <a class="btn btn-default" href="https://asteroid.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
+                    <a class="btn btn-default" href="https://github.com/asteroid-php/asteroid/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
+                    <a class="btn btn-default" href="https://github.com/asteroid-php/asteroid/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
+                </div>Asteroid <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-info text-uppercase">Open source</span> <span class="label label-danger text-uppercase">Discontinued</span>
+                    <span class="label label-default js">
+                        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+                        <span class="github-stars" data-repository="asteroid-php/asteroid">
+                            <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
+                        </span>
+                    </span>
+                </small></h2>
+                <p>A PHP web application framework with advanced features such as <a href="#asteroid-database-objects">Database Objects</a>, Package Manager, mail sending, subcontrollers, a URL router, Twig integration and more. This hasn't been updated in a while and does not work on the latest version of PHP.</p>
+            </div>
+        </div>
+
+        <div class="section fade-in-on-scroll blur-background">
+            <div class="anchor" id="asteroid-database-objects"></div>
+            <div class="container">
+                <h2><div class="btn-group pull-right">
+                    <button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
+                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
+                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
+                    <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
+                </div>Asteroid Database Objects <small style="vertical-align: 4px;"><span class="label label-danger text-uppercase">Discontinued</span></small></h2>
+                <p>Database Objects is a feature of Asteroid - it is currently private. It's used in <a href="#devs-samuelthomas-ml">samuelthomas.xyz</a>.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="anchor" id="jquery-emoji"></div>
+                        <div class="section fade-in-on-scroll blur-background clearfix">
+                            <h3><div class="btn-group btn-group-sm pull-right">
+                                <a class="btn btn-primary" href="https://github.com/samuelthomas2774/jquery-emoji"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
+                                <a class="btn btn-default" href="https://samuelthomas2774.github.io/jquery-emoji/test/test.html"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
+                                <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-emoji/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
+                                <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-emoji/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
+                            </div>jQuery Emoji <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-info text-uppercase">Open source</span>
+                                <span class="label label-default js">
+                                    <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+                                    <span class="github-stars" data-repository="samuelthomas2774/jquery-emoji">
+                                        <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
+                                    </span>
+                                </span>
+                            </small></h3>
+                            <p>A library for quickly adding text emoji support to your site.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="anchor" id="jquery-icons"></div>
+                        <div class="section fade-in-on-scroll blur-background clearfix">
+                            <h3><div class="btn-group btn-group-sm pull-right">
+                                <a class="btn btn-primary" href="https://github.com/samuelthomas2774/jquery-icons-parser"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
+                                <a class="btn btn-default" href="https://samuelthomas2774.github.io/jquery-icons-parser/example.htm"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
+                                <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-icons-parser/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
+                                <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-icons-parser/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
+                            </div>jQuery Icons <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-info text-uppercase">Open source</span>
+                                <span class="label label-default js">
+                                    <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
+                                    <span class="github-stars" data-repository="samuelthomas2774/jquery-icons-parser">
+                                        <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
+                                    </span>
+                                </span>
+                            </small></h3>
+                            <p>A library for quickly adding icons to your site. Icons from these libraries are supported:</p>
+                            <ul>
+                                <li>jQuery UI Icons</li>
+                                <li>Glyphicons</li>
+                                <li>Font Awesome</li>
+                                <li>Framework7 Icons</li>
+                                <li>Ionicons</li>
+                                <li>Typicons</li>
+                                <li>Foundation Icons</li>
+                                <li>Metro UI Icons</li>
+                                <li>Elusive Icons</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="section-header fade-in-on-scroll">
             <div class="container">
                 <h1 class="fade-in-on-scroll">Contributing to</h1>
@@ -615,7 +687,7 @@
             <div class="container">
                 <h2><div class="btn-group pull-right">
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
-                    <a class="btn btn-primary" href="https://celliottbuilding.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
+                    <button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
                 </div>C Elliott Building Ltd</h2>
@@ -636,14 +708,13 @@
                     <p>S/MIME certificates and PGP keys are available <a href="/keys">here</a>.</p>
 
                     <ul class="list-inline">
-                        <li class="icon-facebook" data-keybase-url="https://www.facebook.com/samuelthomas2774/posts/821319944715760"><a href="https://facebook.com/samuelthomas2774">Facebook</a></li>
+                        <li class="icon-gitlab"><a href="https://gitlab.fancy.org.uk/samuel">Fancy GitLab</a></li>
+                        <li class="icon-github" data-keybase-url="https://gist.github.com/1d1db601607a025b3ca3a030dac8b20c"><a href="https://github.com/samuelthomas2774">GitHub</a></li>
+                        <li class="icon-mastodon"><a href="https://mastodon.fancy.org.uk/@samuel">Mastodon</a></li>
+                        <li class="icon-keybase" title="Drag the Facebook, Twitter, Reddit or GitHub icon here to view the Keybase proof"><a href="https://keybase.io/samuelthomas2774">Keybase</a></li>
                         <li class="icon-twitter" data-keybase-url="https://twitter.com/_samuelelliott/status/941786718717530112"><a href="https://twitter.com/_samuelelliott">Twitter</a></li>
                         <li class="icon-reddit" data-keybase-url="https://www.reddit.com/r/KeybaseProofs/comments/6pfy0k/my_keybase_proof_redditsamuelthomas2774/"><a href="https://reddit.com/user/samuelthomas2774/">Reddit</a></li>
-                        <li class="icon-github" data-keybase-url="https://gist.github.com/1d1db601607a025b3ca3a030dac8b20c"><a href="https://github.com/samuelthomas2774">GitHub</a></li>
-                        <li class="icon-gitlab"><a href="https://gitlab.fancy.org.uk/samuel">Fancy GitLab</a></li>
-                        <li class="icon-keybase" title="Drag the Facebook, Twitter, Reddit or GitHub icon here to view the Keybase proof"><a href="https://keybase.io/samuelthomas2774">Keybase</a></li>
                         <li class="icon-discord"><a href="https://discordapp.com/invite/qc9SZwq">Discord</a></li>
-                        <li class="icon-mastodon"><a href="https://mastodon.fancy.org.uk/@samuel">Mastodon</a></li>
                     </ul>
 
                     <form class="form-horizontal" action="https://server.fancy.org.uk/samuelelliott.ml/save-contact.php" method="post">
