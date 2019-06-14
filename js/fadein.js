@@ -5,6 +5,8 @@ var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion)');
 
 $.fadein = {};
 
+$.fadein.time = 500;
+
 $.fadein.refresh = function () {
     var headerheight = $('nav').outerHeight(true),
         scrolltop = $(document).scrollTop() + headerheight,
@@ -30,14 +32,14 @@ $.fadein.refresh = function () {
         } else {
             $mtop = $('<div></div>').css('padding-top', 100).animate({
                 'padding-top': 0
-            }, 800, function () {
+            }, $.fadein.time, function () {
                 $(this).remove();
                 $this.data('fadein-top', null);
             });
 
             $mbottom = $('<div></div>').css('margin-top', -100).animate({
                 'margin-top': 0
-            }, 800, function () {
+            }, $.fadein.time, function () {
                 $(this).remove();
                 $this.data('fadein-bottom', null);
             });
@@ -50,7 +52,7 @@ $.fadein.refresh = function () {
             'visibility': 'visible'
         }).before($mtop).after($mbottom).animate({
             'opacity': 1
-        }, 800, function () {
+        }, $.fadein.time, function () {
             $this.removeClass('fade-in-on-scroll-animate');
         });
     });
@@ -79,11 +81,11 @@ $.fadein.refresh = function () {
             return;
         }
 
-        $this.removeClass('fade-out-on-scroll').addClass('done-fade-out-on-scroll').addClass('fade-out-on-scroll-animate').slideUp(800).animate({
+        $this.removeClass('fade-out-on-scroll').addClass('done-fade-out-on-scroll').addClass('fade-out-on-scroll-animate').slideUp($.fadein.time).animate({
             'opacity': 0
-        }, 800, function () {
+        }, $.fadein.time, function () {
             $this.removeClass('fade-out-on-scroll-animate');
-        }).slideUp(800);
+        }).slideUp($.fadein.time);
     });
 
     $('.done-fade-out-on-scroll').each(function () {
