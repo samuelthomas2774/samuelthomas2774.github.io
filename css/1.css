@@ -72,9 +72,9 @@ body {
     vertical-align: middle;
 }
 
-.btn-primary .octicon,
+.btn .octicon,
 .label .octicon,
-.btn-primary svg.icon-gitlab,
+.btn svg.icon-gitlab,
 .label svg.icon-gitlab {
     fill: currentcolor;
     vertical-align: -3px;
@@ -202,4 +202,151 @@ body {
 html:not(.js) .js,
 html.js .no-js {
     display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #cccccc;
+    }
+
+    .background {
+        background-image: url('../images/Hexagon-layered-seamless-pattern-vector-material-03.jpg');
+    }
+
+    .navbar-default {
+        background-image: -webkit-linear-gradient(top, #070707 0, #000000 100%);
+        background-image: -o-linear-gradient(top, #070707 0, #000000 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#070707), to(#000000));
+        background-image: linear-gradient(#070707, #000000);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff070707', endColorstr='#ff000000', GradientType=0);
+        -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.15), 0 1px 5px rgba(255, 255, 255, 0.075);
+        box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.15), 0 1px 5px rgba(255, 255, 255, 0.075);
+
+        border-color: #181818;
+    }
+    .navbar-default .navbar-brand {
+        color: #a1a1a1;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #888888;
+        text-shadow: rgba(0, 0, 0, 0.25);
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #cccccc;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        background-image: -webkit-linear-gradient(top, #292929 0, #242424 100%);
+        background-image: -o-linear-gradient(top, #292929 0, #242424 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#292929), to(#242424));
+        background-image: linear-gradient(to bottom, #292929 0, #242424 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff292929', endColorstr='#ff242424', GradientType=0);
+        -webkit-box-shadow: inset 0 3px 9px rgba(255, 255, 255, 0.075);
+        box-shadow: inset 0 3px 9px rgba(255, 255, 255, 0.075);
+
+        color: #aaaaaa;
+    }
+
+    .dropdown-menu {
+        background-color: #000000;
+        border-color: rgba(255, 255, 255, 0.15);
+    }
+    .dropdown-menu .divider {
+        background-color: #1a1a1a;
+    }
+    .dropdown-header {
+        color: #888888;
+    }
+    .dropdown-menu > li > a {
+        color: #cccccc;
+    }
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+        background-image: -webkit-linear-gradient(top, #171717 0, #0a0a0a 100%);
+        background-image: -o-linear-gradient(top, #171717 0, #0a0a0a 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#171717), to(#0a0a0a));
+        background-image: linear-gradient(to bottom, #171717 0, #0a0a0a 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff171717', endColorstr='#ff0a0a0a', GradientType=0);
+        background-color: #171717;
+
+        color: #d9d9d9;
+    }
+
+    .jumbotron {
+        background-color: #040404;
+        color: #fbfbfb;
+    }
+
+    .blur-background {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
+        .blur-background {
+            background-color: rgba(0, 0, 0, 0.2);
+            -webkit-backdrop-filter: blur(20px) brightness(30%);
+            backdrop-filter: blur(20px) brightness(30%);
+        }
+
+        @media (prefers-reduced-motion) {
+            .blur-background {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    .btn-default {
+        background-image: -webkit-linear-gradient(top, #1f1f1f 0, #000000 100%);
+        background-image: -o-linear-gradient(top, #1f1f1f 0, #000000 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#1f1f1f), to(#000000));
+        background-image: linear-gradient(to bottom, #1f1f1f 0, #000000 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1f1f1f', endColorstr='#ff000000', GradientType=0);
+        text-shadow: 0 1px 0 #000000;
+        border-color: #333333;
+
+        background-color: #000000;
+        color: #cccccc;
+    }
+    .btn-default:hover {
+        color: #cccccc;
+        background-color: #0b0b0b;
+        border-color: #525252;
+    }
+    .btn-default.disabled, .btn-default.disabled.active, .btn-default.disabled.focus,
+    .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover,
+    .btn-default[disabled], .btn-default[disabled].active, .btn-default[disabled].focus,
+    .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover,
+    fieldset[disabled] .btn-default, fieldset[disabled] .btn-default.active, fieldset[disabled] .btn-default.focus,
+    fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
+        background-color: #1f1f1f;
+    }
+    .btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover,
+    .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover,
+    fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
+        border-color: #333333;
+    }
+
+    pre {
+        background-color: #0a0a0a;
+        border-color: #333333;
+        color: #cccccc;
+    }
+
+    .form-control {
+        background-color: #000000;
+        border-color: #333333;
+        color: #aaaaaa;
+    }
+
+    .icon-facebook, .icon-twitter, .icon-reddit, .icon-github, .icon-gitlab:not(svg), .icon-keybase, .icon-discord, .icon-mastodon {
+        filter: invert(1);
+    }
+
+    .gray-background {
+        background-color: #111111;
+        color: #eeeeee;
+    }
 }
