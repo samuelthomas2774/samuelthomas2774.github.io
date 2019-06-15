@@ -310,10 +310,21 @@ html.js .no-js {
         background-color: #000000;
         color: #cccccc;
     }
-    .btn-default:hover {
+    .btn-default:hover,
+    .btn-default:focus {
         color: #cccccc;
         background-color: #0b0b0b;
         border-color: #525252;
+    }
+    .btn-default:active {
+    color: #cccccc;
+        background-color: #1f1f1f;
+        border-color: #242424;
+    }
+    .btn-default:active:hover {
+        color: #cccccc;
+        background-color: #2b2b2b;
+        border-color: #737373;
     }
     .btn-default.disabled, .btn-default.disabled.active, .btn-default.disabled.focus,
     .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover,
