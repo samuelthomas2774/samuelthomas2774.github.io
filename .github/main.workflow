@@ -11,12 +11,10 @@ action "Clear Cloudflare cache" {
     "CLOUDFLARE_ZONE",
   ]
   args = [
-    "--follow",
-    "--all",
     "POST",
+    "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache",
     "X-Auth-Email:$CLOUDFLARE_EMAIL",
     "X-Auth-Key:$CLOUDFLARE_TOKEN",
-    "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache",
     "purge_everything:=true",
   ]
 }
