@@ -12,8 +12,8 @@ action "Clear Cloudflare cache" {
   ]
   args = [
     "POST",
-    "X-Auth-Email: $CLOUDFLARE_EMAIL",
-    "X-Auth-Key: $CLOUDFLARE_TOKEN",
+    "X-Auth-Email:$CLOUDFLARE_EMAIL",
+    "X-Auth-Key:$CLOUDFLARE_TOKEN",
     "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache",
     "purge_everything:=true",
   ]
