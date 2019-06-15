@@ -11,6 +11,8 @@ action "Clear Cloudflare cache" {
     "CLOUDFLARE_ZONE",
   ]
   args = [
+    "--follow",
+    "--all",
     "POST",
     "X-Auth-Email:$CLOUDFLARE_EMAIL",
     "X-Auth-Key:$CLOUDFLARE_TOKEN",
