@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3/dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
     <link rel="stylesheet" type="text/css" href="css/1.css" />
 </head>
@@ -17,76 +16,74 @@
     <div class="background"></div>
 
     <div class="page">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-default fixed-top">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href=".">Samuel Elliott</a>
-                </div>
+                <a class="navbar-brand" href=".">Samuel Elliott</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://fancy.org.uk">fancy.org.uk</a></li>
-                        <li><a href=".">samuelelliott.ml</a></li>
-                        <li><a href=".#contact">Contact</a></li>
-                        <li><a href="https://github.com/samuelthomas2774">GitHub</a></li>
-                        <li><a href="https://gitlab.fancy.org.uk/samuel">GitLab</a></li>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://fancy.org.uk">fancy.org.uk</a></li class="nav-item">
+                        <li class="nav-item"><a class="nav-link" href=".">samuelelliott.ml</a></li>
+                        <li class="nav-item"><a class="nav-link" href=".#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/samuelthomas2774">GitHub</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://gitlab.fancy.org.uk/samuel">GitLab</a></li>
+                        <li class="nav-item dropdown js" id="navbar-dropdown">
                         <li class="dropdown js" id="navbar-dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-header">Projects</li>
-                                <li><a href=".#hap-server">Home Automation Server</a></li>
-                                <li><a href=".#hap-server-electron-app">Electron Home App</a></li>
-                                <li><a href=".#hap-server-authenticate-pam">PAM Authentication Handler for Home Automation Server</a></li>
-                                <li><a href=".#homebridge-airport">AirPort plugin for Homebridge</a></li>
-                                <li><a href=".#android-tv-homekit">Android TV HomeKit</a></li>
-                                <li><a href=".#homebridge-vestel-network-remote">Vestel TV Network Remote plugin for Homebridge</a></li>
-                                <li><a href=".#homebridge-sky-tv">Sky+ plugin for Homebridge</a></li>
-                                <li><a href=".#oauth-client">OAuth Client</a></li>
-                                <li><a href=".#node-acp">node-acp</a></li>
-                                <li><a href=".#acp-php">acp-php</a></li>
-                                <li><a href=".#mediaremote-server">Media Remote Protocol Server</a></li>
-                                <li><a href=".#icloud-api">iCloud API</a></li>
-                                <li><a href=".#icloud-drive-fs">iCloud Drive Filesystem</a></li>
-                                <li><a href=".#discord-apt-repository">APT Repository for Discord</a></li>
-                                <li><a href=".#atom-discord-presence">Atom Discord Presence</a></li>
-                                <li><a href=".#discord-keybase-integration">Discord Keybase Integration</a></li>
-                                <li><a href=".#discord-module-search">Discord Module Search</a></li>
-                                <li><a href=".#discord-downloadmoreram">Discord Download More RAM</a></li>
-                                <li><a href=".#bd-fixes">BetterDiscord CSS fixes</a></li>
-                                <li><a href=".#bd-hide-sidebars">BetterDiscord Hide Sidebars</a></li>
-                                <li><a href=".#discord-vips">Discord VIPs</a></li>
-                                <li><a href=".#devs-samuelthomas-ml">samuelthomas.xyz</a></li>
-                                <li><a href=".#speechmore">SpeechMore</a></li>
-                                <li><a href=".#samuelthomas-ml-v4">samuelthomas.ml v4</a></li>
-                                <li><a href=".#asteroid">Asteroid</a></li>
-                                <li><a href=".#asteroid-database-objects">Asteroid Database Objects</a></li>
-                                <li><a href=".#jquery-emoji">jQuery Emoji</a></li>
-                                <li><a href=".#jquery-icons">jQuery Icons</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li class="dropdown-header">Contributing to</li>
-                                <li><a href=".#betterdiscord">BetterDiscord v2</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li class="dropdown-header">Other</li>
-                                <li><a href=".#airport">airport</a></li>
-                                <li><a href=".#thewalnutspi">The Walnuts Pi</a></li>
-                                <li><a href=".#tor-relay-fancyorguk01">Tor Relay fancyorguk01</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li class="dropdown-header">Business websites</li>
-                                <li><a href=".#eelliottfineart">Emily Elliott's Fine Art</a></li>
-                                <li><a href=".#celliottbuilding">C Elliott Building Ltd</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li><a href="https://github.com/samuelthomas2774/samuelthomas2774.github.io">samuelthomas2774.github.io on GitHub</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li><a class="reset-scrolling-animation-link" href="#">Reset scrolling animation</a></li>
-                                <li><a class="scroll-to-top-link" href="#">Scroll to the top</a></li>
-                                <li><a class="scroll-to-top-link reset-scrolling-animation-link" href="#">Scroll to the top and reset scrolling animation</a></li>
-                                <li><a class="delete-url-hash-link" href="#">Delete url hash</a></li>
-                            </ul>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <h6 class="dropdown-header">Projects</h6>
+                                <a class="dropdown-item" href=".#hap-server">Home Automation Server</a>
+                                <a class="dropdown-item" href=".#hap-server-electron-app">Electron Home App</a>
+                                <a class="dropdown-item" href=".#hap-server-authenticate-pam">PAM Authentication Handler for Home Automation Server</a>
+                                <a class="dropdown-item" href=".#homebridge-airport">AirPort plugin for Homebridge</a>
+                                <a class="dropdown-item" href=".#android-tv-homekit">Android TV HomeKit</a>
+                                <a class="dropdown-item" href=".#homebridge-vestel-network-remote">Vestel TV Network Remote plugin for Homebridge</a>
+                                <a class="dropdown-item" href=".#homebridge-sky-tv">Sky+ plugin for Homebridge</a>
+                                <a class="dropdown-item" href=".#oauth-client">OAuth Client</a>
+                                <a class="dropdown-item" href=".#node-acp">node-acp</a>
+                                <a class="dropdown-item" href=".#acp-php">acp-php</a>
+                                <a class="dropdown-item" href=".#mediaremote-server">Media Remote Protocol Server</a>
+                                <a class="dropdown-item" href=".#icloud-api">iCloud API</a>
+                                <a class="dropdown-item" href=".#icloud-drive-fs">iCloud Drive Filesystem</a>
+                                <a class="dropdown-item" href=".#discord-apt-repository">APT Repository for Discord</a>
+                                <a class="dropdown-item" href=".#atom-discord-presence">Atom Discord Presence</a>
+                                <a class="dropdown-item" href=".#discord-keybase-integration">Discord Keybase Integration</a>
+                                <a class="dropdown-item" href=".#discord-module-search">Discord Module Search</a>
+                                <a class="dropdown-item" href=".#discord-downloadmoreram">Discord Download More RAM</a>
+                                <a class="dropdown-item" href=".#bd-fixes">BetterDiscord CSS fixes</a>
+                                <a class="dropdown-item" href=".#bd-hide-sidebars">BetterDiscord Hide Sidebars</a>
+                                <a class="dropdown-item" href=".#discord-vips">Discord VIPs</a>
+                                <a class="dropdown-item" href=".#speechmore">SpeechMore</a>
+                                <a class="dropdown-item" href=".#devs-samuelthomas-ml">samuelthomas.xyz</a>
+                                <a class="dropdown-item" href=".#samuelthomas-ml-v4">samuelthomas.ml v4</a>
+                                <a class="dropdown-item" href=".#asteroid">Asteroid</a>
+                                <a class="dropdown-item" href=".#asteroid-database-objects">Asteroid Database Objects</a>
+                                <a class="dropdown-item" href=".#jquery-emoji">jQuery Emoji</a>
+                                <a class="dropdown-item" href=".#jquery-icons">jQuery Icons</a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <h6 class="dropdown-header">Contributing to</h6>
+                                <a class="dropdown-item" href=".#betterdiscord">BetterDiscord v2</a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <h6 class="dropdown-header">Other</h6>
+                                <a class="dropdown-item" href=".#airport">airport</a>
+                                <a class="dropdown-item" href=".#thewalnutspi">The Walnuts Pi</a>
+                                <a class="dropdown-item" href=".#tor-relay-fancyorguk01">Tor Relay fancyorguk01</a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <h6 class="dropdown-header">Business websites</h6>
+                                <a class="dropdown-item" href=".#eelliottfineart">Emily Elliott's Fine Art</a>
+                                <a class="dropdown-item" href=".#celliottbuilding">C Elliott Building Ltd</a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <a class="dropdown-item" href="https://github.com/samuelthomas2774/samuelthomas2774.github.io">samuelthomas2774.github.io on GitHub</a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <a class="dropdown-item reset-scrolling-animation-link" href="#">Reset scrolling animation</a>
+                                <a class="dropdown-item scroll-to-top-link" href="#">Scroll to the top</a>
+                                <a class="dropdown-item scroll-to-top-link reset-scrolling-animation-link" href="#">Scroll to the top and reset scrolling animation</a>
+                                <a class="dropdown-item delete-url-hash-link" href="#">Delete url hash</a>
+                            </div>
                         </li>
                     </ul>
                 </div><!--/.navbar-collapse -->
@@ -102,13 +99,17 @@
 
         <noscript>
             <div class="container">
-                <p class="alert alert-warning"><span class="glyphicon glyphicon-alert"></span> <strong>You have JavaScript disabled.</strong> Don't you want to see the fancy scrolling animation?</p>
+                <p class="alert alert-warning">
+                    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+                    <strong>You have JavaScript disabled.</strong>
+                    Don't you want to see the fancy scrolling animation?
+                </p>
             </div>
         </noscript>
 
         <div class="fade-out-on-scroll" style="display: none;">
-            <div class="container text-center">
-                <h3><span class="glyphicon glyphicon-arrow-down"></span></h3>
+            <div class="container text-center pt-4">
+                <h3><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="20" height="32" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6H7z"></path></svg></h3>
                 <p>Scroll down to see more</p>
             </div>
         </div>
@@ -116,8 +117,8 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="pgp"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
-                    <a class="btn btn-default" href="E43DC4D6.asc"><span class="glyphicon glyphicon-arrow-down"></span> Download</a>
+                <h2><div class="btn-group float-right">
+                    <a class="btn btn-default" href="E43DC4D6.asc"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6H7z"></path></svg> Download</a>
                 </div>PGP Samuel Elliott &lt;samuel@fancy.org.uk&gt; (E43D C4D6)</h2>
                 <p>Valid for:</p>
                 <ul>
@@ -444,8 +445,8 @@ xPxdX4GhPSyUydBFuaMr+4UIhhR9OfZuFFR1F35XzK2/GowyDDOogvd/MqLO
 
         <div class="section fade-in-on-scroll blur-background">
             <div class="container">
-                <h2><div class="btn-group pull-right">
-                    <a class="btn btn-default" href="4D70F696.asc"><span class="glyphicon glyphicon-arrow-down"></span> Download</a>
+                <h2><div class="btn-group float-right">
+                    <a class="btn btn-default" href="4D70F696.asc"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6H7z"></path></svg> Download</a>
                 </div>Unofficial Discord Debian Repository (4D70 F696)</h2>
                 <p>Used for signing the APT repository for Discord.</p>
 
@@ -520,7 +521,7 @@ SWkOcLMQrx/lZziRVXXqooP3MLjCBWKonL+29Wos4YtoYCM=
 
     <!-- jQuery + Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js"></script>
 
     <script src="js/1.js"></script>
     <script src="js/fadein.js"></script>

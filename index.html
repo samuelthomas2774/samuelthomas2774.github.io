@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3/dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
     <link rel="stylesheet" type="text/css" href="css/1.css" />
 </head>
@@ -17,77 +16,76 @@
     <div class="background"></div>
 
     <div class="page">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="anchor" id="page-top"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-default fixed-top">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed js" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href=".">Samuel Elliott</a>
-                </div>
+                <a class="navbar-brand" href=".">Samuel Elliott</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://fancy.org.uk">fancy.org.uk</a></li>
-                        <li class="active js"><a class="scroll-to-top-link reset-scrolling-animation-link close-navbar-link" href="#html">samuelelliott.ml</a></li>
-                        <li class="active no-js"><a href=".">samuelelliott.ml</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="https://github.com/samuelthomas2774">GitHub</a></li>
-                        <li><a href="https://gitlab.fancy.org.uk/samuel">GitLab</a></li>
-                        <li class="dropdown js" id="navbar-dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-header">Projects</li>
-                                <li><a href="#hap-server">Home Automation Server</a></li>
-                                <li><a href="#hap-server-electron-app">Electron Home App</a></li>
-                                <li><a href="#hap-server-authenticate-pam">PAM Authentication Handler for Home Automation Server</a></li>
-                                <li><a href="#homebridge-airport">AirPort plugin for Homebridge</a></li>
-                                <li><a href="#android-tv-homekit">Android TV HomeKit</a></li>
-                                <li><a href="#homebridge-vestel-network-remote">Vestel TV Network Remote plugin for Homebridge</a></li>
-                                <li><a href="#homebridge-sky-tv">Sky+ plugin for Homebridge</a></li>
-                                <li><a href="#oauth-client">OAuth Client</a></li>
-                                <li><a href="#node-acp">node-acp</a></li>
-                                <li><a href="#acp-php">acp-php</a></li>
-                                <li><a href="#mediaremote-server">Media Remote Protocol Server</a></li>
-                                <li><a href="#icloud-api">iCloud API</a></li>
-                                <li><a href="#icloud-drive-fs">iCloud Drive Filesystem</a></li>
-                                <li><a href="#discord-apt-repository">APT Repository for Discord</a></li>
-                                <li><a href="#atom-discord-presence">Atom Discord Presence</a></li>
-                                <li><a href="#discord-keybase-integration">Discord Keybase Integration</a></li>
-                                <li><a href="#discord-module-search">Discord Module Search</a></li>
-                                <li><a href="#discord-downloadmoreram">Discord Download More RAM</a></li>
-                                <li><a href="#bd-fixes">BetterDiscord CSS fixes</a></li>
-                                <li><a href="#bd-hide-sidebars">BetterDiscord Hide Sidebars</a></li>
-                                <li><a href="#discord-vips">Discord VIPs</a></li>
-                                <li><a href="#speechmore">SpeechMore</a></li>
-                                <li><a href="#devs-samuelthomas-ml">samuelthomas.xyz</a></li>
-                                <li><a href="#samuelthomas-ml-v4">samuelthomas.ml v4</a></li>
-                                <li><a href="#asteroid">Asteroid</a></li>
-                                <li><a href="#asteroid-database-objects">Asteroid Database Objects</a></li>
-                                <li><a href="#jquery-emoji">jQuery Emoji</a></li>
-                                <li><a href="#jquery-icons">jQuery Icons</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li class="dropdown-header">Contributing to</li>
-                                <li><a href="#betterdiscord">BetterDiscord v2</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li class="dropdown-header">Other</li>
-                                <li><a href="#airport">airport</a></li>
-                                <li><a href="#thewalnutspi">The Walnuts Pi</a></li>
-                                <li><a href="#tor-relay-fancyorguk01">Tor Relay fancyorguk01</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li class="dropdown-header">Business websites</li>
-                                <li><a href="#eelliottfineart">Emily Elliott's Fine Art</a></li>
-                                <li><a href="#celliottbuilding">C Elliott Building Ltd</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li><a href="https://github.com/samuelthomas2774/samuelthomas2774.github.io">samuelthomas2774.github.io on GitHub</a></li>
-                                <li class="divider" role="separator"></li>
-                                <li><a class="reset-scrolling-animation-link" href="#">Reset scrolling animation</a></li>
-                                <li><a class="scroll-to-top-link" href="#">Scroll to the top</a></li>
-                                <li><a class="scroll-to-top-link reset-scrolling-animation-link" href="#">Scroll to the top and reset scrolling animation</a></li>
-                                <li><a class="delete-url-hash-link" href="#">Delete url hash</a></li>
-                            </ul>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://fancy.org.uk">fancy.org.uk</a></li class="nav-item">
+                        <li class="nav-item js"><a class="nav-link scroll-to-top-link reset-scrolling-animation-link close-navbar-link" href="#page-top">samuelelliott.ml</a></li>
+                        <li class="nav-item active no-js"><a class="nav-link" href=".">samuelelliott.ml</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/samuelthomas2774">GitHub</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://gitlab.fancy.org.uk/samuel">GitLab</a></li>
+                        <li class="nav-item dropdown js" id="navbar-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <h6 class="dropdown-header">Projects</h6>
+                                <a class="dropdown-item" href="#hap-server">Home Automation Server</a>
+                                <a class="dropdown-item" href="#hap-server-electron-app">Electron Home App</a>
+                                <a class="dropdown-item" href="#hap-server-authenticate-pam">PAM Authentication Handler for Home Automation Server</a>
+                                <a class="dropdown-item" href="#homebridge-airport">AirPort plugin for Homebridge</a>
+                                <a class="dropdown-item" href="#android-tv-homekit">Android TV HomeKit</a>
+                                <a class="dropdown-item" href="#homebridge-vestel-network-remote">Vestel TV Network Remote plugin for Homebridge</a>
+                                <a class="dropdown-item" href="#homebridge-sky-tv">Sky+ plugin for Homebridge</a>
+                                <a class="dropdown-item" href="#oauth-client">OAuth Client</a>
+                                <a class="dropdown-item" href="#node-acp">node-acp</a>
+                                <a class="dropdown-item" href="#acp-php">acp-php</a>
+                                <a class="dropdown-item" href="#mediaremote-server">Media Remote Protocol Server</a>
+                                <a class="dropdown-item" href="#icloud-api">iCloud API</a>
+                                <a class="dropdown-item" href="#icloud-drive-fs">iCloud Drive Filesystem</a>
+                                <a class="dropdown-item" href="#discord-apt-repository">APT Repository for Discord</a>
+                                <a class="dropdown-item" href="#atom-discord-presence">Atom Discord Presence</a>
+                                <a class="dropdown-item" href="#discord-keybase-integration">Discord Keybase Integration</a>
+                                <a class="dropdown-item" href="#discord-module-search">Discord Module Search</a>
+                                <a class="dropdown-item" href="#discord-downloadmoreram">Discord Download More RAM</a>
+                                <a class="dropdown-item" href="#bd-fixes">BetterDiscord CSS fixes</a>
+                                <a class="dropdown-item" href="#bd-hide-sidebars">BetterDiscord Hide Sidebars</a>
+                                <a class="dropdown-item" href="#discord-vips">Discord VIPs</a>
+                                <a class="dropdown-item" href="#speechmore">SpeechMore</a>
+                                <a class="dropdown-item" href="#devs-samuelthomas-ml">samuelthomas.xyz</a>
+                                <a class="dropdown-item" href="#samuelthomas-ml-v4">samuelthomas.ml v4</a>
+                                <a class="dropdown-item" href="#asteroid">Asteroid</a>
+                                <a class="dropdown-item" href="#asteroid-database-objects">Asteroid Database Objects</a>
+                                <a class="dropdown-item" href="#jquery-emoji">jQuery Emoji</a>
+                                <a class="dropdown-item" href="#jquery-icons">jQuery Icons</a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <h6 class="dropdown-header">Contributing to</h6>
+                                <a class="dropdown-item" href="#betterdiscord">BetterDiscord v2</a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <h6 class="dropdown-header">Other</h6>
+                                <a class="dropdown-item" href="#airport">airport</a>
+                                <a class="dropdown-item" href="#thewalnutspi">The Walnuts Pi</a>
+                                <a class="dropdown-item" href="#tor-relay-fancyorguk01">Tor Relay fancyorguk01</a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <h6 class="dropdown-header">Business websites</h6>
+                                <a class="dropdown-item" href="#eelliottfineart">Emily Elliott's Fine Art</a>
+                                <a class="dropdown-item" href="#celliottbuilding">C Elliott Building Ltd</a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <a class="dropdown-item" href="https://github.com/samuelthomas2774/samuelthomas2774.github.io">samuelthomas2774.github.io on GitHub</a>
+                                <div class="dropdown-divider" role="separator"></div>
+                                <a class="dropdown-item reset-scrolling-animation-link" href="#">Reset scrolling animation</a>
+                                <a class="dropdown-item scroll-to-top-link" href="#">Scroll to the top</a>
+                                <a class="dropdown-item scroll-to-top-link reset-scrolling-animation-link" href="#">Scroll to the top and reset scrolling animation</a>
+                                <a class="dropdown-item delete-url-hash-link" href="#">Delete url hash</a>
+                            </div>
                         </li>
                     </ul>
                 </div><!--/.navbar-collapse -->
@@ -98,7 +96,7 @@
             <div class="container">
                 <h1>Samuel Elliott</h1>
                 <p>18 year old web developer in Milton Keynes, UK.</p>
-                <p>I design websites, write, test and play with code and administer servers.</p>
+                <p>I design websites and play with code, servers and smart home stuff.</p>
 
                 <ul class="list-inline">
                     <li class="icon-gitlab"><a href="https://gitlab.fancy.org.uk/samuel">Fancy GitLab</a></li>
@@ -114,13 +112,17 @@
 
         <noscript>
             <div class="container">
-                <p class="alert alert-warning"><span class="glyphicon glyphicon-alert"></span> <strong>You have JavaScript disabled.</strong> Don't you want to see the fancy scrolling animation?</p>
+                <p class="alert alert-warning">
+                    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+                    <strong>You have JavaScript disabled.</strong>
+                    Don't you want to see the fancy scrolling animation?
+                </p>
             </div>
         </noscript>
 
         <div class="fade-out-on-scroll" style="display: none;">
-            <div class="container text-center">
-                <h3><span class="glyphicon glyphicon-arrow-down"></span></h3>
+            <div class="container text-center pt-4">
+                <h3><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="20" height="32" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6H7z"></path></svg></h3>
                 <p>Scroll down to see more</p>
             </div>
         </div>
@@ -134,14 +136,14 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="hap-server"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/hap-server/hap-server"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
                     <a class="btn btn-default" href="https://github.com/hap-server/hap-server"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</a>
                     <a class="btn btn-default" href="https://www.npmjs.com/package/@hap-server/hap-server"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> npm</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/hap-server/hap-server/forks/new"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/hap-server/hap-server/tags"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                </div>Home Automation Server <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span> <span class="label label-warning text-uppercase">In development</span>
-                    <span class="label label-default js">
+                </div>Home Automation Server <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span> <span class="badge badge-warning text-uppercase">In development</span>
+                    <span class="badge badge-secondary js">
                         <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                         <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="25">
                             <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -161,21 +163,21 @@
                     <div class="col-md-6">
                         <div class="anchor" id="hap-server-electron-app"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/hap-server/electron-app"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
-                                <a class="btn btn-default" href="https://github.com/hap-server/electron-app"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</a>
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="btn btn-default btn-group-last-js" href="https://github.com/hap-server/electron-app"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</a>
+                                <button type="button" class="btn btn-default dropdown-toggle js" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
 
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li class="disabled"><a href="#">npm</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/hap-server/electron-app/forks/new">Fork</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/hap-server/electron-app/tags">Downloads</a></li>
-                                </ul>
-                            </div>Electron Home App <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span> <span class="label label-warning text-uppercase">In development</span>
-                                <span class="label label-default js">
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item disabled" href="#">npm</a>
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/hap-server/electron-app/forks/new">Fork</a>
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/hap-server/electron-app/tags">Downloads</a>
+                                </div>
+                            </div>Electron Home App <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span> <span class="badge badge-warning text-uppercase">In development</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="30">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -192,21 +194,21 @@
                     <div class="col-md-6">
                         <div class="anchor" id="hap-server-authenticate-pam"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/hap-server/authenticate-pam"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
-                                <a class="btn btn-default" href="https://github.com/hap-server/authenticate-pam"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</a>
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="btn btn-default btn-group-last-js" href="https://github.com/hap-server/authenticate-pam"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</a>
+                                <button type="button" class="btn btn-default dropdown-toggle js" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
 
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="https://www.npmjs.com/package/@hap-server/authenticate-pam">npm</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/hap-server/authenticate-pam/forks/new">Fork</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/hap-server/authenticate-pam/tags">Downloads</a></li>
-                                </ul>
-                            </div>PAM Authentication Handler <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="https://www.npmjs.com/package/@hap-server/authenticate-pam">npm</a>
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/hap-server/authenticate-pam/forks/new">Fork</a>
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/hap-server/authenticate-pam/tags">Downloads</a>
+                                </div>
+                            </div>PAM Authentication Handler <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="26">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -223,21 +225,21 @@
                     <div class="col-md-6">
                         <div class="anchor" id="homebridge-airport"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/homebridge-airport"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
-                                <a class="btn btn-default" href="https://github.com/samuelthomas2774/homebridge-airport"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</a>
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="btn btn-default btn-group-last-js" href="https://github.com/samuelthomas2774/homebridge-airport"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</a>
+                                <button type="button" class="btn btn-default dropdown-toggle js" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
 
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li class="disabled"><a href="#">npm</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/samuel/homebridge-airport/forks/new">Fork</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/samuel/homebridge-airport/tags">Downloads</a></li>
-                                </ul>
-                            </div>AirPort plugin for Homebridge <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item disabled" href="#">npm</a>
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/samuel/homebridge-airport/forks/new">Fork</a>
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/samuel/homebridge-airport/tags">Downloads</a>
+                                </div>
+                            </div>AirPort plugin for Homebridge <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="17">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -254,20 +256,20 @@
                     <div class="col-md-6">
                         <div class="anchor" id="android-tv-homekit"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/android-tv-homekit"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
-                                <a class="btn btn-default" href="https://github.com/samuelthomas2774/android-tv-homekit"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</a>
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="btn btn-default btn-group-last-js" href="https://github.com/samuelthomas2774/android-tv-homekit"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</a>
+                                <button type="button" class="btn btn-default dropdown-toggle js" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
 
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="https://gitlab.fancy.org.uk/samuel/android-tv-homekit/forks/new">Fork</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/samuel/android-tv-homekit/tags">Downloads</a></li>
-                                </ul>
-                            </div>Android TV HomeKit <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/samuel/android-tv-homekit/forks/new">Fork</a class="dropdown-item">
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/samuel/android-tv-homekit/tags">Downloads</a>
+                                </div>
+                            </div>Android TV HomeKit <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="33">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -285,21 +287,21 @@
                     <div class="col-md-6">
                         <div class="anchor" id="homebridge-vestel-network-remote"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/homebridge-vestel-network-remote"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
-                                <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</button>
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn btn-default btn-group-last-js" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</button>
+                                <button type="button" class="btn btn-default dropdown-toggle js" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
 
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="https://www.npmjs.com/package/homebridge-vestel-network-remote">npm</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/samuel/homebridge-vestel-network-remote/forks/new">Fork</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/samuel/homebridge-vestel-network-remote/tags">Downloads</a></li>
-                                </ul>
-                            </div>Vestel TV Network Remote plugin for Homebridge <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="https://www.npmjs.com/package/homebridge-vestel-network-remote">npm</a>
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/samuel/homebridge-vestel-network-remote/forks/new">Fork</a>
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/samuel/homebridge-vestel-network-remote/tags">Downloads</a>
+                                </div>
+                            </div>Vestel TV Network Remote plugin for Homebridge <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="20">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -313,21 +315,21 @@
                     <div class="col-md-6">
                         <div class="anchor" id="homebridge-sky-tv"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/homebridge-sky-tv"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
-                                <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</button>
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn btn-default btn-group-last-js" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub Mirror</button>
+                                <button type="button" class="btn btn-default dropdown-toggle js" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="caret"></span>
                                     <span class="sr-only">Toggle Dropdown</span>
                                 </button>
 
-                                <ul class="dropdown-menu dropdown-menu-right">
-                                    <li class="disabled"><a href="#">npm</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/samuel/homebridge-sky-tv/forks/new">Fork</a></li>
-                                    <li><a href="https://gitlab.fancy.org.uk/samuel/homebridge-sky-tv/tags">Downloads</a></li>
-                                </ul>
-                            </div>Sky+ plugin for Homebridge <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item disabled" href="#">npm</a>
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/samuel/homebridge-sky-tv/forks/new">Fork</a>
+                                    <a class="dropdown-item" href="https://gitlab.fancy.org.uk/samuel/homebridge-sky-tv/tags">Downloads</a>
+                                </div>
+                            </div>Sky+ plugin for Homebridge <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="31">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -344,13 +346,13 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="oauth-client"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-primary" href="https://github.com/samuelthomas2774/oauth-client"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                     <a class="btn btn-default" href="https://samuelthomas2774.github.io/oauth-client/"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                     <a class="btn btn-default" href="https://github.com/samuelthomas2774/oauth-client/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                     <a class="btn btn-default" href="https://github.com/samuelthomas2774/oauth-client/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                </div>OAuth Client <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span> <span class="label label-info text-uppercase">In development</span>
-                    <span class="label label-default js">
+                </div>OAuth Client <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span> <span class="badge badge-info text-uppercase">In development</span>
+                    <span class="badge badge-secondary js">
                         <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                         <span class="github-stars" data-repository="samuelthomas2774/oauth-client">
                             <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -380,13 +382,13 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="node-acp"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/node-acp"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
                     <a class="btn btn-default" href="https://www.npmjs.com/package/node-acp"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/node-acp/forks/new"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/node-acp/-/archive/master/node-acp-master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                </div>node-acp <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span> <span class="label label-warning text-uppercase">In development</span>
-                    <span class="label label-default js">
+                </div>node-acp <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span> <span class="badge badge-warning text-uppercase">In development</span>
+                    <span class="badge badge-secondary js">
                         <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                         <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="3">
                             <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -401,13 +403,13 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="acp-php"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/acp-php"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
                     <a class="btn btn-default" href="https://packagist.org/packages/samuelthomas2774/acp-php"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/acp-php/forks/new"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/acp-php/-/archive/master/node-acp-master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                </div>acp-php <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span> <span class="label label-warning text-uppercase">In development</span>
-                    <span class="label label-default js">
+                </div>acp-php <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span> <span class="badge badge-warning text-uppercase">In development</span>
+                    <span class="badge badge-secondary js">
                         <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                         <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="16">
                             <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -422,13 +424,13 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="mediaremote-server"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/mediaremote-server"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
                     <a class="btn btn-default" href="https://www.npmjs.com/package/mediaremote-server"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/mediaremote-server/forks/new"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/mediaremote-server/-/archive/master/mediaremote-server-master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                </div>Media Remote Protocol Server <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span> <span class="label label-warning text-uppercase">In development</span>
-                    <span class="label label-default js">
+                </div>Media Remote Protocol Server <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span> <span class="badge badge-warning text-uppercase">In development</span>
+                    <span class="badge badge-secondary js">
                         <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                         <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="42">
                             <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -443,13 +445,13 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="icloud-api"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/icloud-api"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
                     <a class="btn btn-default" href="https://www.npmjs.com/package/@samuelthomas2774/icloud-api"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/icloud-api/forks/new"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/icloud-api/-/archive/master/icloud-api-master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                </div>iCloud API <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                    <span class="label label-default js">
+                </div>iCloud API <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                    <span class="badge badge-secondary js">
                         <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                         <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="13">
                             <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -463,13 +465,13 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="icloud-drive-fs"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/icloud-drive-fs"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
                     <a class="btn btn-default" href="https://www.npmjs.com/package/icloud-drive-fs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/icloud-drive-fs/forks/new"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/icloud-drive-fs/-/archive/master/icloud-drive-fs-master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                </div>iCloud Drive Filesystem <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                    <span class="label label-default js">
+                </div>iCloud Drive Filesystem <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                    <span class="badge badge-secondary js">
                         <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                         <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="14">
                             <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -486,7 +488,7 @@
                     <div class="col-md-6">
                         <div class="anchor" id="discord-apt-repository"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
                                 <a class="btn btn-primary" href="https://samuel.repo.ml/discord-apt-repository/"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                                 <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
@@ -501,13 +503,13 @@
                     <div class="col-md-6">
                         <div class="anchor" id="atom-discord-presence"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://github.com/samuelthomas2774/atom-discord-presence"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                                 <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/atom-discord-presence/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/atom-discord-presence/releases/latest"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>Atom Discord Presence <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                            </div>Atom Discord Presence <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="github-stars" data-repository="samuelthomas2774/atom-discord-presence">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -521,13 +523,13 @@
                     <div class="col-md-6">
                         <div class="anchor" id="discord-keybase-integration"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://github.com/samuelthomas2774/discord-keybase-integration"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                                 <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/discord-keybase-integration/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/discord-keybase-integration/releases/latest"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>Discord Keybase Integration <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                            </div>Discord Keybase Integration <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="github-stars" data-repository="samuelthomas2774/discord-keybase-integration">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -541,13 +543,13 @@
                     <div class="col-md-6">
                         <div class="anchor" id="discord-module-search"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://github.com/samuelthomas2774/discord-module-search"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                                 <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/discord-module-search/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/discord-module-search/releases/latest"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>Discord Module Search <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                            </div>Discord Module Search <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="github-stars" data-repository="samuelthomas2774/discord-module-search">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -561,13 +563,13 @@
                     <div class="col-md-6">
                         <div class="anchor" id="discord-downloadmoreram"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://github.com/samuelthomas2774/discord-downloadmoreram"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                                 <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/discord-downloadmoreram/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/discord-downloadmoreram/releases/latest"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>Download More RAM for Discord <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                            </div>Download More RAM for Discord <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="github-stars" data-repository="samuelthomas2774/discord-downloadmoreram">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -581,13 +583,13 @@
                     <div class="col-md-6">
                         <div class="anchor" id="bd-fixes"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://github.com/samuelthomas2774/bd-fixes"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                                 <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/bd-fixes/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/bd-fixes/releases/latest"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>BetterDiscord CSS fixes <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span> <span class="label label-danger text-uppercase">Discontinued</span>
-                                <span class="label label-default js">
+                            </div>BetterDiscord CSS fixes <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span> <span class="badge badge-danger text-uppercase">Discontinued</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="github-stars" data-repository="samuelthomas2774/bd-fixes">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -602,13 +604,13 @@
                     <div class="col-md-6">
                         <div class="anchor" id="bd-hide-sidebars"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://github.com/samuelthomas2774/bd-hide-sidebars"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                                 <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/bd-hide-sidebars/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/bd-hide-sidebars/releases/latest"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>BetterDiscord Hide Sidebars <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                            </div>BetterDiscord Hide Sidebars <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="github-stars" data-repository="samuelthomas2774/bd-hide-sidebars">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -622,13 +624,13 @@
                     <div class="col-md-6">
                         <div class="anchor" id="discord-vips"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://gitlab.fancy.org.uk/samuel/bd-vips"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
                                 <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                                 <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/bd-vips/forks/new"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                                 <a class="btn btn-default" href="https://gitlab.fancy.org.uk/samuel/bd-vips/-/archive/master/bd-vips-master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>Discord VIPs <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                            </div>Discord VIPs <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="gitlab-stars" data-gitlab-server="gitlab.fancy.org.uk" data-repository="11">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -645,12 +647,12 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="speechmore"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-default" href="https://gitlab.fancy.org.uk/speechmore"><svg class="icon-gitlab" viewBox="0 0 24 24" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263C4.783.84 4.185.84 4.05 1.26L1.386 9.449.044 13.587c-.121.375.014.789.331 1.023L12 23.054l11.625-8.443c.318-.235.453-.647.33-1.024"/></svg> GitLab</a>
                     <a class="btn btn-primary" href="https://speechmore.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
-                </div>SpeechMore <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span></small></h2>
+                </div>SpeechMore <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Free</span></small></h2>
                 <p>SpeechMore is a secure, privacy respecting and pro-freedom of speech social network.</p>
             </div>
         </div>
@@ -658,12 +660,12 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="devs-samuelthomas-ml"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
                     <a class="btn btn-primary" href="https://samuelthomas.xyz"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
-                </div>samuelthomas.xyz <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-danger text-uppercase">Discontinued</span></small></h2>
+                </div>samuelthomas.xyz <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Free</span> <span class="badge badge-danger text-uppercase">Discontinued</span></small></h2>
                 <p>Social website built on <a href="#asteroid">Asteroid</a>. It's accessible at <a href="https://samuelthomas.xyz">https://samuelthomas.xyz</a>. You currently need an invitation code to register. This hasn't been updated in a while and currently does not work.</p>
             </div>
         </div>
@@ -671,12 +673,12 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="samuelthomas-ml-v4"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
                     <button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
-                </div>samuelthomas.ml v4 <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Free</span> <span class="label label-danger text-uppercase">Discontinued</span></small></h2>
+                </div>samuelthomas.ml v4 <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Free</span> <span class="badge badge-danger text-uppercase">Discontinued</span></small></h2>
                 <p>Older version of samuelthomas.ml.</p>
             </div>
         </div>
@@ -684,13 +686,13 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="asteroid"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-primary" href="https://github.com/asteroid-php/asteroid"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                     <a class="btn btn-default" href="https://asteroid.ml"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                     <a class="btn btn-default" href="https://github.com/asteroid-php/asteroid/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                     <a class="btn btn-default" href="https://github.com/asteroid-php/asteroid/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                </div>Asteroid <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span> <span class="label label-danger text-uppercase">Discontinued</span>
-                    <span class="label label-default js">
+                </div>Asteroid <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span> <span class="badge badge-danger text-uppercase">Discontinued</span>
+                    <span class="badge badge-secondary js">
                         <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                         <span class="github-stars" data-repository="asteroid-php/asteroid">
                             <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -704,12 +706,12 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="asteroid-database-objects"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</button>
-                </div>Asteroid Database Objects <small style="vertical-align: 4px;"><span class="label label-danger text-uppercase">Discontinued</span></small></h2>
+                </div>Asteroid Database Objects <small style="vertical-align: 4px;"><span class="badge badge-danger text-uppercase">Discontinued</span></small></h2>
                 <p>Database Objects is a feature of Asteroid - it is currently private. It's used in <a href="#devs-samuelthomas-ml">samuelthomas.xyz</a>.</p>
             </div>
         </div>
@@ -720,13 +722,13 @@
                     <div class="col-md-6">
                         <div class="anchor" id="jquery-emoji"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://github.com/samuelthomas2774/jquery-emoji"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                                 <a class="btn btn-default" href="https://samuelthomas2774.github.io/jquery-emoji/test/test.html"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-emoji/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-emoji/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>jQuery Emoji <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                            </div>jQuery Emoji <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="github-stars" data-repository="samuelthomas2774/jquery-emoji">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -740,13 +742,13 @@
                     <div class="col-md-6">
                         <div class="anchor" id="jquery-icons"></div>
                         <div class="section fade-in-on-scroll blur-background clearfix">
-                            <h3><div class="btn-group btn-group-sm pull-right">
+                            <h3><div class="btn-group btn-group-sm float-right">
                                 <a class="btn btn-primary" href="https://github.com/samuelthomas2774/jquery-icons-parser"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                                 <a class="btn btn-default" href="https://samuelthomas2774.github.io/jquery-icons-parser/example.htm"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-icons-parser/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
                                 <a class="btn btn-default" href="https://github.com/samuelthomas2774/jquery-icons-parser/archive/master.zip"><svg class="octicon octicon-arrow-down" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 7V3H3v4H0l5 6 5-6z"></path></svg> Download</a>
-                            </div>jQuery Icons <small style="vertical-align: 4px;"><span class="label label-primary text-uppercase">Open source</span>
-                                <span class="label label-default js">
+                            </div>jQuery Icons <small style="vertical-align: 4px;"><span class="badge badge-primary text-uppercase">Open source</span>
+                                <span class="badge badge-secondary js">
                                     <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                                     <span class="github-stars" data-repository="samuelthomas2774/jquery-icons-parser">
                                         <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -780,7 +782,7 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="betterdiscord"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-primary" href="https://github.com/samuelthomas2774/betterdiscordapp"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                     <a class="btn btn-default" href="https://github.com/samuelthomas2774/betterdiscordapp/fork"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</a>
@@ -798,10 +800,10 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="airport"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-default" href="https://github.com/samuelthomas2774/airport"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                     <a class="btn btn-primary" href="https://github.com/samuelthomas2774/airport/wiki"><svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg> Wiki</a>
-                </div>airport <small style="vertical-align: 4px;"><span class="label label-default js">
+                </div>airport <small style="vertical-align: 4px;"><span class="badge badge-secondary js">
                         <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>
                         <span class="github-stars" data-repository="samuelthomas2774/airport">
                             <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>
@@ -816,7 +818,7 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="thewalnutspi"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-default" href="https://github.com/thewalnutspi"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</a>
                     <button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                 </div>The Walnuts Pi</h2>
@@ -828,7 +830,7 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="tor-relay-fancyorguk01"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <a class="btn btn-primary" href="https://metrics.torproject.org/rs.html#details/4DAC4367E09033A742DB7DAEDD3EE8208DF63158"><svg class="octicon octicon-pulse" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8h-2.5z"></path></svg> Tor Metrics</a>
                 </div>Tor Relay fancyorguk01</h2>
                 <p>My Tor relay running on poweredge-t30.fancy.org.uk.</p>
@@ -847,7 +849,7 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="eelliottfineart"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
                     <a class="btn btn-primary" href="https://eelliottfineart.co.uk"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</a>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
@@ -860,7 +862,7 @@
         <div class="section fade-in-on-scroll blur-background">
             <div class="anchor" id="celliottbuilding"></div>
             <div class="container">
-                <h2><div class="btn-group pull-right">
+                <h2><div class="btn-group float-right">
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> GitHub</button>
                     <button class="btn btn-primary" disabled="disabled"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg> Website</button>
                     <button class="btn btn-default" disabled="disabled"><svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg> Fork</button>
@@ -870,54 +872,55 @@
             </div>
         </div>
 
-        <div class="section fade-in-on-scroll">
+        <div class="section-header fade-in-on-scroll">
             <div class="anchor" id="contact"></div>
             <div class="container">
                 <h1>Contact me</h1>
             </div>
-            <div class="blur-background">
-                <div class="container">
-                    <br />
-                    <p>You can contact me here or using my email address <a href="mailto:samuel@fancy.org.uk">samuel@fancy.org.uk</a>. If you want to report a non-sensitive issue with my open source projects please use GitHub/GitLab Issues.</p>
-                    <p>Please note I do not sell web development services.</p>
-                    <p>S/MIME certificates and PGP keys are available <a href="/keys">here</a>.</p>
+        </div>
 
-                    <ul class="list-inline">
-                        <li class="icon-gitlab"><a href="https://gitlab.fancy.org.uk/samuel">Fancy GitLab</a></li>
-                        <li class="icon-github" data-keybase-url="https://gist.github.com/1d1db601607a025b3ca3a030dac8b20c"><a href="https://github.com/samuelthomas2774">GitHub</a></li>
-                        <li class="icon-mastodon" data-keybase-url="https://mastodon.fancy.org.uk/@samuel"><a href="https://mastodon.fancy.org.uk/@samuel">Mastodon</a></li>
-                        <li class="icon-keybase" title="Drag the GitHub, Mastodon, Twitter or Reddit icon here to view the Keybase proof"><a href="https://keybase.io/samuelthomas2774">Keybase</a></li>
-                        <li class="icon-twitter" data-keybase-url="https://twitter.com/_samuelelliott/status/941786718717530112"><a href="https://twitter.com/_samuelelliott">Twitter</a></li>
-                        <li class="icon-reddit" data-keybase-url="https://www.reddit.com/r/KeybaseProofs/comments/6pfy0k/my_keybase_proof_redditsamuelthomas2774/"><a href="https://reddit.com/user/samuelthomas2774/">Reddit</a></li>
-                        <li class="icon-discord"><a href="https://discordapp.com/invite/qc9SZwq">Discord</a></li>
-                    </ul>
+        <div class="section fade-in-on-scroll blur-background">
+            <div class="container">
+                <p>You can contact me here or using my email address <a href="mailto:samuel@fancy.org.uk">samuel@fancy.org.uk</a>. If you want to report a non-sensitive issue with my open source projects please use GitHub/GitLab Issues.</p>
+                <p>Please note I do not sell web development services.</p>
+                <p>S/MIME certificates and PGP keys are available <a href="/keys">here</a>.</p>
 
-                    <form class="form-horizontal" action="https://server.fancy.org.uk/samuelelliott.ml/save-contact.php" method="post">
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label" for="contact-name">Name</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" type="text" name="name" id="contact-name" />
-                            </div>
+                <ul class="list-inline">
+                    <li class="icon-gitlab"><a href="https://gitlab.fancy.org.uk/samuel">Fancy GitLab</a></li>
+                    <li class="icon-github" data-keybase-url="https://gist.github.com/1d1db601607a025b3ca3a030dac8b20c"><a href="https://github.com/samuelthomas2774">GitHub</a></li>
+                    <li class="icon-mastodon" data-keybase-url="https://mastodon.fancy.org.uk/@samuel"><a href="https://mastodon.fancy.org.uk/@samuel">Mastodon</a></li>
+                    <li class="icon-keybase" title="Drag the GitHub, Mastodon, Twitter or Reddit icon here to view the Keybase proof"><a href="https://keybase.io/samuelthomas2774">Keybase</a></li>
+                    <li class="icon-twitter" data-keybase-url="https://twitter.com/_samuelelliott/status/941786718717530112"><a href="https://twitter.com/_samuelelliott">Twitter</a></li>
+                    <li class="icon-reddit" data-keybase-url="https://www.reddit.com/r/KeybaseProofs/comments/6pfy0k/my_keybase_proof_redditsamuelthomas2774/"><a href="https://reddit.com/user/samuelthomas2774/">Reddit</a></li>
+                    <li class="icon-discord"><a href="https://discordapp.com/invite/qc9SZwq">Discord</a></li>
+                </ul>
+
+                <form action="https://server.fancy.org.uk/samuelelliott.ml/save-contact.php" method="post">
+                    <div class="form-group row">
+                        <label class="col-sm-2 control-label" for="contact-name">Name</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" name="name" id="contact-name" />
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label" for="contact-email">Email address</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" type="email" name="email" id="contact-email" />
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 control-label" for="contact-email">Email address</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="email" name="email" id="contact-email" />
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label" for="contact-message">Message</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" name="message" id="contact-message" style="min-height: 100px; max-height: 400px; resize: vertical;"></textarea>
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 control-label" for="contact-message">Message</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" name="message" id="contact-message" style="min-height: 100px; max-height: 400px; resize: vertical;"></textarea>
                         </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button class="btn btn-primary" type="submit">Submit</button>
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10">
+                            <button class="btn btn-primary" type="submit">Submit</button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -934,7 +937,8 @@
     <!-- jQuery + Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1/jquery-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js"></script>
 
     <script src="js/1.js"></script>
     <script src="js/fadein.js"></script>
