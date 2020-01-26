@@ -155,7 +155,11 @@ h3 .octicon,
 .btn .octicon,
 .badge .octicon,
 .btn svg.icon-gitlab,
-.badge svg.icon-gitlab {
+.badge svg.icon-gitlab,
+.btn svg.icon-npm,
+.badge svg.icon-npm,
+.btn svg.icon-composer,
+.badge svg.icon-composer {
     fill: currentcolor;
     vertical-align: -3px;
 }
