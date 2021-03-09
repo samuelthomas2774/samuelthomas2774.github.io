@@ -82,13 +82,13 @@ class FadeInOnScroll {
     }
 
     reset() {
-        for (const el of this.target.getElementsByClassName('done-fade-in-on-scroll')) {
+        for (const el of this.target.querySelectorAll('.done-fade-in-on-scroll')) {
             el.classList.remove('done-fade-in-on-scroll');
             el.classList.remove('fade-in-on-scroll-animate');
             el.classList.add('fade-in-on-scroll');
         }
 
-        for (const el of this.target.getElementsByClassName('done-fade-out-on-scroll')) {
+        for (const el of this.target.querySelectorAll('.done-fade-out-on-scroll')) {
             $(el).stop();
             el.classList.remove('done-fade-out-on-scroll');
             el.classList.remove('fade-out-on-scroll-animate');
