@@ -173,9 +173,23 @@ h3 .octicon,
     margin-top: 3rem;
 }
 
+.section-header-2 {
+    margin-top: 2rem;
+}
+
 .section .container {
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.image {
+    margin: 1rem 0;
+    text-align: center;
+    max-height: 300px;
+    overflow: hidden;
+}
+.image img {
+    max-width: 100%;
 }
 
 .h2, h2 {
@@ -365,6 +379,11 @@ html.js .done-fade-out-on-scroll {
 }
 
 @media (prefers-color-scheme: dark) {
+    html,
+    body {
+        background-color: #000000;
+    }
+
     body,
     .navbar-brand {
         color: #cccccc;
