@@ -22,62 +22,62 @@ class FadeInOnScroll {
         const triggeroffset = scrolltop > windowheight * 2 ? triggerbottom :
             Math.min(this.scrollingElement.scrollTop * 2, triggerbottom);
 
-        for (const el of this.target.getElementsByClassName('fade-in-on-scroll')) {
-            const offset = el.getClientRects()[0].top + this.scrollingElement.scrollTop;
-            if (triggeroffset < offset) continue;
+        for (const el of this.target.querySelectorAll('.fade-in-on-scroll, .done-fade-in-on-scroll')) {
+            if (!el.classList.contains('done-fade-in-on-scroll')) {
+                const offset = el.getClientRects()[0].top + this.scrollingElement.scrollTop;
+                if (triggeroffset < offset) continue;
 
-            el.classList.remove('fade-in-on-scroll');
-            el.classList.add('done-fade-in-on-scroll');
-            if (animate) {
-                el.classList.add('fade-in-on-scroll-animate');
-            }
-        }
-
-        for (const el of this.target.getElementsByClassName('done-fade-in-on-scroll')) {
-            const offset = el.getClientRects()[0].top + this.scrollingElement.scrollTop;
-
-            if (offset < scrollbottom) continue;
-
-            el.classList.add('fade-in-on-scroll');
-            el.classList.remove('done-fade-in-on-scroll');
-            el.classList.remove('fade-in-on-scroll-animate');
-        }
-
-        for (const el of this.target.getElementsByClassName('fade-out-on-scroll')) {
-            const offset = el.getClientRects()[0].top + this.scrollingElement.scrollTop;
-
-            if (triggeroffset < offset) continue;
-
-            el.classList.remove('fade-out-on-scroll');
-            el.classList.add('done-fade-out-on-scroll');
-            if (animate) {
-                el.classList.add('fade-out-on-scroll-animate');
-                $(el).animate({
-                    'opacity': 0,
-                }, this.time, () => {
-                    el.classList.remove('fade-out-on-scroll-animate');
-                });
-                if (!FadeInOnScroll.prefersReducedMotion.matches) $(el).slideUp(this.time);
+                el.classList.remove('fade-in-on-scroll');
+                el.classList.add('done-fade-in-on-scroll');
+                if (animate) {
+                    el.classList.add('fade-in-on-scroll-animate');
+                }
             } else {
-                el.style.display = 'none';
-                el.style.opacity = 0;
+                const offset = el.getClientRects()[0].top + this.scrollingElement.scrollTop;
+
+                if (offset < scrollbottom) continue;
+
+                el.classList.add('fade-in-on-scroll');
+                el.classList.remove('done-fade-in-on-scroll');
+                el.classList.remove('fade-in-on-scroll-animate');
             }
         }
 
-        for (const el of this.target.getElementsByClassName('done-fade-out-on-scroll')) {
-            const rect = el.getClientRects()[0] ??
-                el.nextElementSibling?.getClientRects?.()?.[0] ??
-                el.parentElement.getClientRects()[0];
-            const offset = rect.top + this.scrollingElement.scrollTop;
+        for (const el of this.target.querySelectorAll('.fade-out-on-scroll, .done-fade-out-on-scroll')) {
+            if (!el.classList.contains('done-fade-out-on-scroll')) {
+                const offset = el.getClientRects()[0].top + this.scrollingElement.scrollTop;
 
-            if (offset < scrollbottom) continue;
+                if (triggeroffset < offset) continue;
 
-            $(el).stop();
-            el.classList.remove('done-fade-out-on-scroll');
-            el.classList.remove('fade-out-on-scroll-animate');
-            el.classList.add('fade-out-on-scroll');
-            el.style.display = 'block';
-            el.style.opacity = 1;
+                el.classList.remove('fade-out-on-scroll');
+                el.classList.add('done-fade-out-on-scroll');
+                if (animate) {
+                    el.classList.add('fade-out-on-scroll-animate');
+                    $(el).animate({
+                        'opacity': 0,
+                    }, this.time, () => {
+                        el.classList.remove('fade-out-on-scroll-animate');
+                    });
+                    if (!FadeInOnScroll.prefersReducedMotion.matches) $(el).slideUp(this.time);
+                } else {
+                    el.style.display = 'none';
+                    el.style.opacity = 0;
+                }
+            } else {
+                const rect = el.getClientRects()[0] ??
+                    el.nextElementSibling?.getClientRects?.()?.[0] ??
+                    el.parentElement.getClientRects()[0];
+                const offset = rect.top + this.scrollingElement.scrollTop;
+
+                if (offset < scrollbottom) continue;
+
+                $(el).stop();
+                el.classList.remove('done-fade-out-on-scroll');
+                el.classList.remove('fade-out-on-scroll-animate');
+                el.classList.add('fade-out-on-scroll');
+                el.style.display = 'block';
+                el.style.opacity = 1;
+            }
         }
     }
 
