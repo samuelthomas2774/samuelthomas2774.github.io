@@ -1,14 +1,19 @@
-var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion)');
 
-$(document).on('scroll', function () {
-    var scrolltop = -$(document).scrollTop(),
-        offset = scrolltop / 5;
+(() => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion)');
+    const backgroundElement = document.getElementsByClassName('background')[0];
 
-    if (prefersReducedMotion.matches) {
-        return;
+    function refresh() {
+        const scrolltop = -document.scrollingElement.scrollTop;
+        const offset = scrolltop / 5;
+
+        if (prefersReducedMotion.matches) {
+            return;
+        }
+
+        backgroundElement.style.backgroundPosition = `center ${offset}px`;
     }
 
-    $('.background').css({
-        'background-position': 'center ' + offset + 'px'
-    });
-}).trigger('scroll');
+    document.addEventListener('scroll', refresh);
+    refresh();
+})();

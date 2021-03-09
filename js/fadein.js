@@ -1,135 +1,138 @@
-$('.fade-in-on-scroll').css('visibility', 'hidden').css('opacity', 0);
-$('.fade-out-on-scroll').css('display', 'block').css('opacity', 1);
+class FadeInOnScroll {
+    constructor(target, scrollingElement) {
+        this.time = 500;
 
-var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion)');
+        this.target = target ?? document;
+        this.window = window;
+        this.scrollingElement = scrollingElement ?? document.scrollingElement;
+        this.fixedHeader = this.target.getElementsByTagName('nav')[0];
 
-$.fadein = {};
+        for (const el of this.target.getElementsByClassName('fade-out-on-scroll')) {
+            el.style.display = 'block';
+        }
+    }
 
-$.fadein.time = 500;
+    refresh(animate = true) {
+        const headerheight = this.fixedHeader.clientHeight || 0;
+        const scrolltop = this.scrollingElement.scrollTop + headerheight;
+        const windowheight = this.window.innerHeight - headerheight;
+        const scrollbottom = scrolltop + windowheight;
 
-$.fadein.refresh = function () {
-    var headerheight = $('nav').outerHeight(true),
-        scrolltop = $(document).scrollTop() + headerheight,
-        windowheight = $(window).height() - headerheight,
-        documentheight = $(document).height() - headerheight,
-        percentage = scrolltop / (documentheight - windowheight),
-        centertop = documentheight * percentage,
-        scrollbottom = scrolltop + windowheight;
+        const triggerbottom = scrollbottom - (windowheight * 0.1);
+        const triggeroffset = scrolltop > windowheight * 2 ? triggerbottom :
+            Math.min(this.scrollingElement.scrollTop * 2, triggerbottom);
 
-    $('.fade-in-on-scroll').each(function () {
-        var $this = $(this),
-            offset = $this.offset().top,
-            offsetbottom = offset + $this.outerHeight(),
-            $mtop, $mbottom;
+        for (const el of this.target.getElementsByClassName('fade-in-on-scroll')) {
+            const offset = el.getClientRects()[0].top + this.scrollingElement.scrollTop;
+            if (triggeroffset < offset) continue;
 
-        if (centertop < offset) {
-            return;
+            el.classList.remove('fade-in-on-scroll');
+            el.classList.add('done-fade-in-on-scroll');
+            if (animate) {
+                el.classList.add('fade-in-on-scroll-animate');
+            }
         }
 
-        if (prefersReducedMotion.matches) {
-            $mtop = $('<div></div>');
-            $mbottom = $('<div></div>');
-        } else {
-            $mtop = $('<div></div>').css('padding-top', 100).animate({
-                'padding-top': 0
-            }, $.fadein.time, function () {
-                $(this).remove();
-                $this.data('fadein-top', null);
-            });
+        for (const el of this.target.getElementsByClassName('done-fade-in-on-scroll')) {
+            const offset = el.getClientRects()[0].top + this.scrollingElement.scrollTop;
 
-            $mbottom = $('<div></div>').css('margin-top', -100).animate({
-                'margin-top': 0
-            }, $.fadein.time, function () {
-                $(this).remove();
-                $this.data('fadein-bottom', null);
-            });
+            if (offset < scrollbottom) continue;
+
+            el.classList.add('fade-in-on-scroll');
+            el.classList.remove('done-fade-in-on-scroll');
+            el.classList.remove('fade-in-on-scroll-animate');
         }
 
-        $this.removeClass('fade-in-on-scroll').addClass('done-fade-in-on-scroll').addClass('fade-in-on-scroll-animate').data({
-            'fadein-top': $mtop,
-            'fadein-bottom': $mbottom
-        }).css({
-            'visibility': 'visible'
-        }).before($mtop).after($mbottom).animate({
-            'opacity': 1
-        }, $.fadein.time, function () {
-            $this.removeClass('fade-in-on-scroll-animate');
-        });
-    });
+        for (const el of this.target.getElementsByClassName('fade-out-on-scroll')) {
+            const offset = el.getClientRects()[0].top + this.scrollingElement.scrollTop;
 
-    $('.done-fade-in-on-scroll').each(function () {
-        var $this = $(this),
-            offset = $this.offset().top,
-            offsetbottom = offset + $this.outerHeight(),
-            $mtop, $mbottom;
+            if (triggeroffset < offset) continue;
 
-        if (offset < scrollbottom) {
-            return;
+            el.classList.remove('fade-out-on-scroll');
+            el.classList.add('done-fade-out-on-scroll');
+            if (animate) {
+                el.classList.add('fade-out-on-scroll-animate');
+                $(el).animate({
+                    'opacity': 0,
+                }, this.time, () => {
+                    el.classList.remove('fade-out-on-scroll-animate');
+                });
+                if (!FadeInOnScroll.prefersReducedMotion.matches) $(el).slideUp(this.time);
+            } else {
+                el.style.display = 'none';
+                el.style.opacity = 0;
+            }
         }
 
-        $this.stop().addClass('fade-in-on-scroll').removeClass('done-fade-in-on-scroll').removeClass('fade-in-on-scroll-animate').css('visibility', 'hidden').css('opacity', 0);
-        if (($mtop = $($this.data('fadein-top'))).length > 0) $mtop.stop().remove();
-        if (($mbottom = $($this.data('fadein-bottom'))).length > 0) $mbottom.stop().remove();
-        $this.data({ 'fadein-top': null, 'fadein-bottom': null });
-    });
+        for (const el of this.target.getElementsByClassName('done-fade-out-on-scroll')) {
+            const rect = el.getClientRects()[0] ??
+                el.nextElementSibling?.getClientRects?.()?.[0] ??
+                el.parentElement.getClientRects()[0];
+            const offset = rect.top + this.scrollingElement.scrollTop;
 
-    $('.fade-out-on-scroll').each(function () {
-        var $this = $(this),
-            offset = $this.offset().top;
+            if (offset < scrollbottom) continue;
 
-        if (centertop < offset) {
-            return;
+            $(el).stop();
+            el.classList.remove('done-fade-out-on-scroll');
+            el.classList.remove('fade-out-on-scroll-animate');
+            el.classList.add('fade-out-on-scroll');
+            el.style.display = 'block';
+            el.style.opacity = 1;
+        }
+    }
+
+    reset() {
+        for (const el of this.target.getElementsByClassName('done-fade-in-on-scroll')) {
+            el.classList.remove('done-fade-in-on-scroll');
+            el.classList.remove('fade-in-on-scroll-animate');
+            el.classList.add('fade-in-on-scroll');
         }
 
-        $this.removeClass('fade-out-on-scroll').addClass('done-fade-out-on-scroll').addClass('fade-out-on-scroll-animate').slideUp($.fadein.time).animate({
-            'opacity': 0
-        }, $.fadein.time, function () {
-            $this.removeClass('fade-out-on-scroll-animate');
-        }).slideUp($.fadein.time);
-    });
-
-    $('.done-fade-out-on-scroll').each(function () {
-        var $this = $(this),
-            offset = $this.offset().top;
-
-        if (offset < scrollbottom) {
-            return;
+        for (const el of this.target.getElementsByClassName('done-fade-out-on-scroll')) {
+            $(el).stop();
+            el.classList.remove('done-fade-out-on-scroll');
+            el.classList.remove('fade-out-on-scroll-animate');
+            el.classList.add('fade-out-on-scroll');
+            el.style.display = 'block';
+            el.style.opacity = 1;
         }
+    }
+}
 
-        $(this).stop().removeClass('done-fade-out-on-scroll').removeClass('fade-out-on-scroll-animate').addClass('fade-out-on-scroll').css('display', 'block').css('opacity', 1);
-    });
-};
+FadeInOnScroll.prefersReducedMotion = window.matchMedia('(prefers-reduced-motion)');
 
-$.fadein.reset = function () {
-    $('.done-fade-in-on-scroll').stop().removeClass('done-fade-in-on-scroll').removeClass('fade-in-on-scroll-animate').addClass('fade-in-on-scroll').css('visibility', 'hidden').css('opacity', 0).each(function () {
-        var $this = $(this),
-            $mtop = $($this.data('fadein-top')),
-            $mbottom = $($this.data('fadein-bottom'));
+$.fadein = new FadeInOnScroll(document);
 
-        $this.data({
-            'fadein-top': null,
-            'fadein-bottom': null
-        });
-        $mtop.stop().remove();
-        $mbottom.stop().remove();
-    });
-    $('.done-fade-out-on-scroll').stop().removeClass('done-fade-out-on-scroll').removeClass('fade-out-on-scroll-animate').addClass('fade-out-on-scroll').css('display', 'block').css('opacity', 1);
-};
+let fadein_refresh_timeout = null;
+function requestRefresh() {
+    if (fadein_refresh_timeout !== null) return;
 
-$(document).on('scroll', $.fadein.refresh);
-$.fadein.refresh();
+    fadein_refresh_timeout = setTimeout(() => {
+        $.fadein.refresh();
+        fadein_refresh_timeout = null;
+    }, 0);
+}
 
-$(document).ready(function () {
-    $('.reset-scrolling-animation-link').on('click', function (event) {
+document.addEventListener('scroll', requestRefresh);
+document.addEventListener('touchmove', requestRefresh);
+window.addEventListener('hashchange', requestRefresh);
+$.fadein.refresh(false);
+
+for (const link of document.querySelectorAll('.reset-scrolling-animation-link')) {
+    link.addEventListener('click', ev => {
+        ev.preventDefault();
         $.fadein.reset();
-        event.preventDefault();
     });
-    $('.scroll-to-top-link').on('click', function (event) {
-        $('html, body').scrollTop(0);
-        event.preventDefault();
+}
+for (const link of document.querySelectorAll('.scroll-to-top-link')) {
+    link.addEventListener('click', ev => {
+        ev.preventDefault();
+        document.scrollingElement.scrollTop = 0;
     });
-    $('.delete-url-hash-link').on('click', function (event) {
+}
+for (const link of document.querySelectorAll('.delete-url-hash-link')) {
+    link.addEventListener('click', ev => {
+        ev.preventDefault();
         history.pushState(null, null, window.location.pathname + window.location.search);
-        event.preventDefault();
     });
-});
+}

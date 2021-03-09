@@ -1,30 +1,24 @@
-$(document).ready($.refreshgitlabstars = function () {
-    $('.gitlab-stars').each(function () {
-        var $this = $(this),
-            host = $this.attr('data-gitlab-server') || 'gitlab.com',
-            repository = $this.attr('data-repository'),
-            content = $this.attr('data-updatingcontent'),
-            beforecontent = $this.attr('data-beforecontent') || '',
-            aftercontent = $this.attr('data-aftercontent') || '',
-            errorcontent = $this.attr('data-errorcontent');
+function refreshgitlabstars() {
+    for (const el of document.getElementsByClassName('gitlab-stars')) {
+        const host = el.getAttribute('data-gitlab-server') || 'gitlab.com';
+        const repository = parseInt(el.getAttribute('data-repository'));
+        const content = el.getAttribute('data-updatingcontent');
+        const beforecontent = el.getAttribute('data-beforecontent') || '';
+        const aftercontent = el.getAttribute('data-aftercontent') || '';
+        const errorcontent = el.getAttribute('data-errorcontent');
 
-        if (typeof content === 'string') {
-            $this.html(content);
-        }
+        if (isNaN(repository)) continue;
 
-        $.ajax({
-            url: 'https://' + host + '/api/v4/projects/' + repository,
-            method: 'GET',
-            success(response) {
-                if (typeof response === 'string') {
-                    response = $.parseJSON(response);
-                }
+        if (typeof content === 'string') el.innerHTML = content;
 
-                $this.html(beforecontent + response.star_count + aftercontent);
-            },
-            error() {
-                $this.html(errorcontent);
-            }
+        fetch(`https://${host}/api/v4/projects/${repository}`).then(async res => {
+            const data = await res.json();
+
+            el.innerHTML = beforecontent + Number(data.star_count) + aftercontent;
+        }).catch(err => {
+            el.innerHTML = errorcontent;
         });
-    });
-});
+    }
+}
+
+refreshgitlabstars();

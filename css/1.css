@@ -11,6 +11,7 @@ body {
     height: 100%;
 
     background-image: url("../images/abstract-background-with-a-3d-pattern_1319-68.jpg");
+    will-change: background-position;
 }
 
 .page {
@@ -314,6 +315,53 @@ html.js .no-js {
 html:not(.js) .btn-group > .btn.btn-group-last-js {
     border-top-right-radius: .2rem;
     border-bottom-right-radius: 0.2rem;
+}
+
+html.js .fade-in-on-scroll {
+    visibility: hidden;
+    opacity: 0;
+}
+html.js .done-fade-in-on-scroll {
+    visibility: visible;
+    opacity: 1;
+}
+.fade-in-on-scroll-animate {
+    opacity: 1;
+    transform: translateY(0);
+    animation: 0.5s ease fade-in-on-scroll;
+}
+@media (prefers-reduced-motion) {
+    .fade-in-on-scroll-animate {
+        animation-name: fade-in-on-scroll-reduced-motion;
+    }
+}
+
+@keyframes fade-in-on-scroll {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fade-in-on-scroll-reduced-motion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html:not(.js) .fade-out-on-scroll {
+    display: none;
+}
+html.js .fade-out-on-scroll,
+html.js .done-fade-out-on-scroll {
+    position: absolute;
+    width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {

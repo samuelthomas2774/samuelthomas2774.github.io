@@ -1,29 +1,24 @@
-$(document).ready($.refreshstars = function () {
-    $('.github-stars').each(function () {
-        var $this = $(this),
-            repository = $this.attr('data-repository'),
-            content = $this.attr('data-updatingcontent'),
-            beforecontent = $this.attr('data-beforecontent') || '',
-            aftercontent = $this.attr('data-aftercontent') || '',
-            errorcontent = $this.attr('data-errorcontent');
+function refreshstars() {
+    for (const el of document.getElementsByClassName('github-stars')) {
+        const repository = el.getAttribute('data-repository');
+        const content = el.getAttribute('data-updatingcontent');
+        const beforecontent = el.getAttribute('data-beforecontent') || '';
+        const aftercontent = el.getAttribute('data-aftercontent') || '';
+        const errorcontent = el.getAttribute('data-errorcontent');
 
-        if (typeof content === 'string') {
-            $this.html(content);
-        }
+        if (typeof content === 'string') el.innerHTML = content;
 
-        $.ajax({
-            url: 'https://api.github.com/repos/' + repository,
-            method: 'GET',
-            success(response) {
-                if (typeof response === 'string') {
-                    response = $.parseJSON(response);
-                }
+        fetch(`https://api.github.com/repos/${repository}`).then(async res => {
+            const data = await res.json();
+            const stars = Number(data.stargazers_count);
 
-                $this.html(beforecontent + response.stargazers_count + aftercontent);
-            },
-            error() {
-                $this.html(errorcontent);
-            }
+            if (isNaN(stars)) throw new Error('Invalid star count');
+
+            el.innerHTML = beforecontent + stars + aftercontent;
+        }).catch(err => {
+            el.innerHTML = errorcontent;
         });
-    });
-});
+    }
+}
+
+refreshstars();
