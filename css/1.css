@@ -14,6 +14,15 @@ body {
     will-change: background-position;
 }
 
+.hidden-off-page {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    top: -1;
+}
+
 .page {
     position: relative;
 }
@@ -337,6 +346,10 @@ html.js .no-js {
 html:not(.js) .btn-group > .btn.btn-group-last-js {
     border-top-right-radius: .2rem;
     border-bottom-right-radius: 0.2rem;
+}
+html:not(.ios) .ios,
+html.ios .no-ios {
+    display: none;
 }
 
 html.js .fade-in-on-scroll {
