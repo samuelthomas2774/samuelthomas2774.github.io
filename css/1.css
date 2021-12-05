@@ -151,6 +151,9 @@ body {
     vertical-align: middle;
 }
 
+.octicon {
+    fill: currentcolor;
+}
 h3 .octicon,
 .alert .octicon,
 .btn .octicon,

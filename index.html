@@ -903,6 +903,13 @@
                                 </span>
                             </small></h3>
                             <p>Node.js implementation of Keybase's <a href="https://saltpack.org">Saltpack</a> encrypted messaging format.</p>
+                            <pre><code class="language-ts">import { encryptAndArmor } from '@samuelthomas2774/saltpack';
+
+const message = 'Hi!';
+const key: tweetnacl.BoxKeyPair = <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true" aria-label="..."><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>;
+const recipients: Uint8Array[] = <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true" aria-label="..."><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>;
+
+const encrypted = await encryptAndArmor(message, key, recipient);</code></pre>
                         </div>
                     </div>
 
@@ -934,6 +941,14 @@
                                 </span>
                             </small></h3>
                             <p>PHP implementation of Keybase's <a href="https://saltpack.org">Saltpack</a> encrypted messaging format.</p>
+                            <pre><code class="language-php">use Saltpack\Encryption;
+
+$message = 'Hi!';
+$key = <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true" aria-label="..."><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>;
+$recipients = <svg class="octicon octicon-ellipsis" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true" aria-label="..."><path d="M11 5H1c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zM4 9H2V7h2v2zm3 0H5V7h2v2zm3 0H8V7h2v2z"></path></svg>;
+
+$encrypted = Encryption::encryptAndArmor($message, $key, $recipients);
+</code></pre>
                         </div>
                     </div>
                 </div>
