@@ -242,7 +242,7 @@ h3 .octicon,
 
 @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
     .blur-background {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.3);
         -webkit-backdrop-filter: blur(20px) brightness(130%);
         backdrop-filter: blur(20px) brightness(130%);
     }
@@ -479,7 +479,7 @@ html.js .done-fade-out-on-scroll {
 
     @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
         .blur-background {
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.3);
             -webkit-backdrop-filter: blur(20px) brightness(30%);
             backdrop-filter: blur(20px) brightness(30%);
         }
