@@ -264,6 +264,10 @@ h3 .octicon,
     cursor: not-allowed;
 }
 
+.list-inline {
+    user-select: none;
+}
+
 .icon-facebook, .icon-twitter, .icon-reddit, .icon-github, .icon-gitlab:not(svg), .icon-keybase, .icon-discord, .icon-mastodon, .icon-linkedin, .icon-kofi {
     font-size: 0px;
     background: center no-repeat / 22px;
@@ -323,6 +327,103 @@ h3 .octicon,
 }
 .icon-kofi {
     background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/kofi.svg");
+}
+
+.discord-activity {
+    font-size: 14px;
+    font-weight: 300;
+    user-select: none;
+}
+.discord-activity > :first-child {
+    margin-top: 3em;
+}
+.discord-activity > :first-child:before {
+    content: '';
+    display: block;
+    max-width: 5em;
+    margin-bottom: 1em;
+    border-top: 2px solid #aaaaaa;
+}
+.discord-status-icon {
+    display: inline-block;
+    margin-right: 0.3em;
+    background-color: #6c757d;
+    border-radius: 50%;
+    width: 0.5em;
+    height: 0.5em;
+    vertical-align: 1px;
+}
+.discord-status-icon.discord-status-icon-online {
+    background-color: rgb(59, 165, 93);
+}
+.discord-status-icon.discord-status-icon-idle {
+    background-color: rgb(250, 168, 26);
+}
+.discord-status-icon.discord-status-icon-dnd {
+    background-color: rgb(237, 66, 69);
+}
+.discord-activities {
+    margin-right: -1em;
+}
+.discord-activity-card {
+    display: inline-block;
+    margin-top: 1em;
+    margin-right: 1em;
+    width: 450px;
+    max-width: calc(100% - 1em);
+    padding: 15px;
+    background-color: #ffffff;
+    font-weight: 300;
+    border-radius: 5px;
+}
+.discord-activity-type {
+    margin: -4px 0 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+.discord-activity-inner {
+    display: flex;
+    align-items: center;
+}
+.discord-activity-images {
+    position: relative;
+    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+}
+.discord-activity-icon-large {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background: center / cover;
+}
+.discord-activity-icon-small {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: center / cover;
+    border: 4px solid #ffffff;
+}
+.discord-activity-info {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+.discord-activity-name {
+    font-weight: 500;
+}
+.discord-activity-name, .discord-activity-details, .discord-activity-state {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 * {
@@ -393,6 +494,9 @@ html.js .done-fade-in-on-scroll {
     }
 }
 
+.fade-out-on-scroll {
+    user-select: none;
+}
 html:not(.js) .fade-out-on-scroll {
     display: none;
 }
@@ -545,5 +649,15 @@ html.js .done-fade-out-on-scroll {
     .gray-background {
         background-color: #111111;
         color: #eeeeee;
+    }
+
+    .discord-status::before {
+        border-color: #1a1a1a;
+    }
+    .discord-activity-card {
+        background-color: rgb(24, 25, 28);
+    }
+    .discord-activity-icon-small {
+        border-color: rgb(24, 25, 28);
     }
 }
