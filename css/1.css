@@ -268,7 +268,7 @@ h3 .octicon,
     user-select: none;
 }
 
-.icon-facebook, .icon-twitter, .icon-reddit, .icon-github, .icon-gitlab:not(svg), .icon-keybase, .icon-discord, .icon-mastodon, .icon-linkedin, .icon-kofi {
+.icon-facebook, .icon-twitter, .icon-reddit, .icon-github, .icon-gitlab:not(svg), .icon-keybase, .icon-discord, .icon-mastodon, .icon-linkedin, .icon-kofi, .icon-matrix, .icon-buymeacoffee {
     font-size: 0px;
     background: center no-repeat / 22px;
     margin: -1px;
@@ -282,18 +282,18 @@ h3 .octicon,
     transition: transform 0.2s ease;
     transform: scale(0.85);
 }
-.icon-facebook:hover, .icon-twitter:hover, .icon-reddit:hover, .icon-github:hover, .icon-gitlab:not(svg):hover, .icon-keybase:hover, .icon-discord:hover, .icon-mastodon:hover, .icon-linkedin:hover, .icon-kofi:hover,
+.icon-facebook:hover, .icon-twitter:hover, .icon-reddit:hover, .icon-github:hover, .icon-gitlab:not(svg):hover, .icon-keybase:hover, .icon-discord:hover, .icon-mastodon:hover, .icon-linkedin:hover, .icon-kofi:hover, .icon-matrix:hover, .icon-buymeacoffee:hover,
 .icon-facebook.ui-draggable-dragging, .icon-twitter.ui-draggable-dragging, .icon-reddit.ui-draggable-dragging, .icon-github.ui-draggable-dragging,
 .icon-keybase.ui-droppable-hover {
     transform: scale(1);
 }
-.jumbotron .icon-facebook, .jumbotron .icon-twitter, .jumbotron .icon-reddit, .jumbotron .icon-github, .jumbotron .icon-gitlab:not(svg), .jumbotron .icon-keybase, .jumbotron .icon-discord, .jumbotron .icon-mastodon, .jumbotron .icon-linkedin, .jumbotron .icon-kofi {
+.jumbotron .icon-facebook, .jumbotron .icon-twitter, .jumbotron .icon-reddit, .jumbotron .icon-github, .jumbotron .icon-gitlab:not(svg), .jumbotron .icon-keybase, .jumbotron .icon-discord, .jumbotron .icon-mastodon, .jumbotron .icon-linkedin, .jumbotron .icon-kofi, .jumbotron .icon-matrix, .jumbotron .icon-buymeacoffee {
     background-size: 24px;
     width: 24px;
     height: 24px;
     line-height: 24px;
 }
-.icon-facebook a, .icon-twitter a, .icon-reddit a, .icon-github a, .icon-gitlab:not(svg) a, .icon-keybase a, .icon-discord a, .icon-mastodon a, .icon-linkedin a, .icon-kofi a {
+.icon-facebook a, .icon-twitter a, .icon-reddit a, .icon-github a, .icon-gitlab:not(svg) a, .icon-keybase a, .icon-discord a, .icon-mastodon a, .icon-linkedin a, .icon-kofi a, .icon-matrix a, .icon-buymeacoffee a {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -327,6 +327,12 @@ h3 .octicon,
 }
 .icon-kofi {
     background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/kofi.svg");
+}
+.icon-matrix {
+    background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/matrix.svg");
+}
+.icon-buymeacoffee {
+    background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/buymeacoffee.svg");
 }
 
 .discord-activity {
@@ -642,7 +648,7 @@ html.js .done-fade-out-on-scroll {
         color: #aaaaaa;
     }
 
-    .icon-facebook, .icon-twitter, .icon-reddit, .icon-github, .icon-gitlab:not(svg), .icon-keybase, .icon-discord, .icon-mastodon, .icon-linkedin, .icon-kofi {
+    .icon-facebook, .icon-twitter, .icon-reddit, .icon-github, .icon-gitlab:not(svg), .icon-keybase, .icon-discord, .icon-mastodon, .icon-linkedin, .icon-kofi, .icon-matrix, .icon-buymeacoffee {
         filter: invert(1);
     }
 
