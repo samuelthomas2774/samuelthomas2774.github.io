@@ -204,7 +204,11 @@ function renderPresence(el, data, nxapi_data) {
     ) {
         const status_text = status === 'online' ? 'Online' : status === 'idle' ? 'Idle' : '';
         const custom_status_html = custom_status ?
-            `<span class="discord-status-custom">${encode(custom_status.state)}</span>` : '';
+            `<span class="discord-status-custom">${encode(
+                (custom_status.emoji?.name ?? '') +
+                (custom_status.emoji && custom_status.state ? ' ' : '') +
+                (custom_status.state ?? '')
+            )}</span>` : '';
         const status_html = status_text || custom_status_html ? `
             <div class="discord-status">
                 <div class="discord-status-icon discord-status-icon-${status}"></div>
